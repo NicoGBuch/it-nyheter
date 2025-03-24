@@ -81,3 +81,41 @@ button:hover {
 .midt h1 {
     font-size: 60px;
 }
+
+.container{
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+.grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px ;
+}
+
+article{
+    min-height: 300px;
+    grid-column: span 3;
+    background-color: rgb(224, 211, 211);
+}
+
+.extraLarge{
+    grid-column: span 12;
+}
+
+.large{
+    grid-column: span 6;
+}
+
+.small{
+    grid-column: span 3;
+
+}
+
+.tekst{
+    padding: 20px;
+}
+
+
