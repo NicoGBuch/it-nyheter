@@ -69,3 +69,16 @@ button:hover {
     
 }
 
+
+.avisBody {
+    padding: 60px;
+}
+
+.midt {
+    padding: 0 350px;
+    margin: auto;
+}
+
+.midt h1 {
+    font-size: 60px;
+}
