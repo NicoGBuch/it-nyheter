@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,9 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
 </head>
+
 <body>
 
     <nav>
@@ -27,7 +28,7 @@
         </div>
         <i class="fa-solid fa-moon" onclick="switchColor()"></i>
     </nav>
-    
+
     <div class="avisBody">
         <div class="midt">
             <h1>Overskrift</h1>
@@ -35,15 +36,29 @@
         </div>
 
 
-        <img src="https://shared.cdn.smp.schibsted.com/v2/images/37c4a3cc-a100-451e-9e51-1ea65c421b9b?fit=crop&format=auto&h=2250&w=4000&s=42702804370bf7faa800900897216bcc536d85f8">
+        <img
+            src="https://shared.cdn.smp.schibsted.com/v2/images/37c4a3cc-a100-451e-9e51-1ea65c421b9b?fit=crop&format=auto&h=2250&w=4000&s=42702804370bf7faa800900897216bcc536d85f8">
+
+        <section class="hovedinnhold">
+        
+        </section>
+
 
         <p>Skrevet av ...</p>
-        
+
         <p>
             tekst her
         </p>
     </div>
 
-    <script src="script.js"></script>
+    <button onclick="document.getElementById('popup').style.display='block'">Åpne</button>
+    <div id="popup">
+        Dette er en modal dialog!
+        <button onclick="document.getElementById('popup').style.display='none'">Lukk</button>
+    </div>
+
+
+ <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-
         #overskrift-ih {
-           margin-bottom: 30px;
-           margin-left: 30px;
+            margin-bottom: 30px;
+            margin-left: 30px;
 
         }
 
@@ -25,9 +24,31 @@
             font-weight: bold;
         }
 
+        .bold-inniboks {
+            font-weight: bold;
+        }
+
+        .spurte-chat-boks {
+            border:  1px solid black;
+            padding: 40px;
+            
+
+        }
+
+        .tittel-inniboks {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .linje-inniboks {
+            height: 2px;
+            background-color: grey;
+            margin-bottom: 20px;
+        }
     </style>
-    
+
 </head>
+
 <body>
 
     <nav>
@@ -44,60 +65,112 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="avisBody">
         <div class="midt">
-            <h1 id="overskrift-ih"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade telefonen 40 ganger </h1>
-            <p> Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye strøm som går med, er ekspertene uenige om. Vi spurte ChatGPT selv.</p>
+            <h1 id="overskrift-ih"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade telefonen
+                40 ganger </h1>
+            <p> Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye strøm som går med, er
+                ekspertene uenige om. Vi spurte ChatGPT selv.</p>
         </div>
 
-        <img class="bildeartikkel"  src="bilder/chatgptBilde.webp">
+        <img class="bildeartikkel" src="bilder/chatgptBilde.webp">
 
-        <section class="hovedinnhold"> 
+        <section class="hovedinnhold">
 
-        <p>Hva skal jeg gi til søsteren min i bursdagsgave? Hvor bør jeg reise neste sommer? Hver gang du stiller et spørsmål til språkmodellen ChatCPT, utløser det like mye strømforbruk som om du fullader telefonen. </p> 
+            <p>Hva skal jeg gi til søsteren min i bursdagsgave? Hvor bør jeg reise neste sommer? Hver gang du stiller et
+                spørsmål til språkmodellen ChatCPT, utløser det like mye strømforbruk som om du fullader telefonen. </p>
 
-       
-        <p class="bold-tekster"> Ikke bare én, men 40 ganger. </p>   
 
-        <p> Det mener i hvert fall Raghavendra Selvan, 
-            som er forsker i maskinlæring og datavitenskap ved Københavns Universitet.
-        </p>
+            <p class="bold-tekster"> Ikke bare én, men 40 ganger. </p>
 
-        <p> 
-
-            Til den danske avisen Berlingske sier forskeren at en enkel instruks (på engelsk prompt) 
-            som i gjennom’snitt genererer et svar på 230 ord, bruker 0,19 kilowattimer. Det tilsvarer altså å lade
-             telefonen 40 ganger.
+            <p> Det mener i hvert fall Raghavendra Selvan,
+                som er forsker i maskinlæring og datavitenskap ved Københavns Universitet.
             </p>
-            
+
             <p>
-            ChatGPT har nå over 200 millioner aktive brukere hver uke, dobbelt så mange som 
-            de hadde i november i fjor. OpenAI, firmaet bak ChatGPT, offentliggjør ikke data. 
-            Derfor er Selvans utregning basert på målinger av et gjennomsnittlig energiforbruk i 
-            hundre prompts i en lignende språkmodell.
 
-        </p>
+                Til den danske avisen Berlingske sier forskeren at en enkel instruks (på engelsk prompt)
+                som i gjennom’snitt genererer et svar på 230 ord, bruker 0,19 kilowattimer. Det tilsvarer altså å lade
+                telefonen 40 ganger.
+            </p>
 
-        <p class="bold-tekster"> Sprikende tall </p>
+            <p>
+                ChatGPT har nå over 200 millioner aktive brukere hver uke, dobbelt så mange som
+                de hadde i november i fjor. OpenAI, firmaet bak ChatGPT, offentliggjør ikke data.
+                Derfor er Selvans utregning basert på målinger av et gjennomsnittlig energiforbruk i
+                hundre prompts i en lignende språkmodell.
 
-       
-       
+            </p>
+
+            <p class="bold-tekster"> Sprikende tall </p>
+
+            <p> – Jeg kan ikke utelukke at konklusjonen i min analyse er et worst case scenario, sier Selvan til
+                Berlingske.</p>
+
+            <p> Det kan altså være at man ikke bør trekke for mange konklusjoner fra studien. Det mener også Luís
+                Cruz-Filipe, forsker ved Syddansk Universitet: </p>
+
+            <p> – De lovende resultatene gjør at vi i det minste bør undersøke dette som et alternativ. Men min følelse
+                er at det er en noe begrenset studie. De fokuserer på ett spesifikt område av kunstig intelligens, sier
+                han, ifølge Forskning.no. </p>
+
+            <p> En annen forsker som er skeptisk til tallene, er Jonas Kristiansen Nøland. </p>
 
 
 
-        
+            <p> Han er førsteamanuensis ved Institutt for elektrisk energi på NTNU og har forsket på strømbruken til
+                datasentrene som driver kunstig intelligens som ChatGPT. </p>
+
+            <p> – I en artikkel jeg har skrevet, fant vi at en gjennomsnittlig forespørsel til ChatGPT bruker i snitt
+                2,89 wattimer, sier han til Aftenposten. </p>
+
+            <p> Det er 0,00289 kilowattimer. Selvan ved Københavns Universitet sitt anslag er altså over 65 ganger så
+                stort. </p>
+
+            <p> – Jeg synes det høres urealistisk ut, sier Nøland. Han understreker samtidig at han foreløpig ikke har
+                kjennskap til hvordan Selvan har regnet ut sine anslag. </p>
+
+
+            
+            <div class="spurte-chat-boks" > 
+
+                <p class="tittel-inniboks"> Vi har spurt ChatGPT om hvor mye strøm den bruker </p>
+
+                <div class="linje-inniboks"></div>
+
+                <p> <span class="bold-inniboks"> Instruks (prompt): </span>  «I gjennomsnitt hvor mye strøm (målt i kWh) bruker ChatGPT på å motta, 
+                analysere og svare på ett prompt?» </p>
+
+                <p> <span class="bold-inniboks"> Svar: </span>  «Energiforbruket til ChatGPT for å behandle et enkelt spørsmål kan 
+                variere betydelig avhengig av flere faktorer, som størrelsen på modellen, kompleksiteten til spørsmålet, 
+                og infrastrukturen som brukes til å kjøre modellen. </p>
+
+                <p> Når det gjelder spesifikke tall, finnes det ingen offisiell, nøyaktig kilde som gir et spesifikt
+                gjennomsnitt for energiforbruket til ChatGPT per forespørsel. Imidlertid kan vi gi et anslag basert 
+                på informasjon om lignende modeller. </p>
+
+
+            </div>
 
 
 
-        <p>Skrevet av ...</p>
-        
-        <p>
-            tekst her
-        </p>
+
+
+
+
+
+
+
+            <p>Skrevet av ...</p>
+
+            <p>
+                tekst her
+            </p>
 
         </section>
     </div>
 
 </body>
+
 </html>

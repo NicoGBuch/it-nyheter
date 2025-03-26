@@ -31,10 +31,12 @@ img {
 }
 
 body {
-    font-family: "Lato", serif;
+    font-family: "Roboto", serif;
     font-weight: 700;
     font-style: normal;
     background-color: var(--background-color);
+    font-family: roboto;
+    
 }
 
 
@@ -130,10 +132,8 @@ article {
     background-color: var(--article-color);
     display: flex;
     color: var(--text-color);
-}
-
-article:hover {
     cursor: pointer;
+    overflow: hidden;
 }
 
 article img {
@@ -162,6 +162,7 @@ article h2 {
 }
 
 .tekst {
+    overflow-wrap: break-word;
     padding: 20px;
 }
 
@@ -173,4 +174,12 @@ article h2 {
     width: 1000px;
     font-size: 30px;
     gap: 30px;
+}
+
+#popup{
+    display:none; 
+    background:white; 
+    padding:20px; 
+    border:1px 
+    solid black;
 }
