@@ -124,9 +124,6 @@ article {
     grid-column: span 3;
     background-color: var(--article-color);
     display: flex;
-}
-
-article:hover {
     cursor: pointer;
 }
 
