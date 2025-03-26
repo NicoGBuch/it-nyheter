@@ -82,10 +82,6 @@ button:hover {
 
 }
 
-article {
-    width: 100%;
-}
-
 .avisBody {
     padding: 60px;
 }
@@ -110,14 +106,18 @@ article {
 .grid {
     margin-top: 50px;
     display: grid;
-    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
 
-.grid a {
+article {
     min-height: 300px;
     grid-column: span 3;
     background-color: var(--article-color);
+}
+
+article:hover {
+    cursor: pointer;
 }
 
 .extraLarge {
