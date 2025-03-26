@@ -3,3 +3,9 @@ function scrollKarusell(direction) {
     const scrollAmount = 310; // Justerer hvor mye det ruller per klikk
     karusell.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
+
+document.querySelectorAll("article").forEach(el => {
+    el.addEventListener('click', () => {
+        location.href = "/" + el.id + ".html";
+    });
+});
