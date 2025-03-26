@@ -13,10 +13,11 @@ img {
 }
 
 :root {
-    --background-color: white;
+    --background-color: #f5f5f5;
     --text-color: black;
-    --nav-color: grey;
+    --nav-color: #fff;
     --nav-text-color: white;
+    --article-color: rgb(224, 211, 211);
 }
 
 .darkmode {
@@ -29,7 +30,7 @@ body {
     font-family: "Lato", serif;
     font-weight: 700;
     font-style: normal;
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
 }
 
 
@@ -38,7 +39,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #fff;
+    background-color: var(--nav-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -111,7 +112,7 @@ button:hover {
 article {
     min-height: 300px;
     grid-column: span 3;
-    background-color: rgb(224, 211, 211);
+    background-color: var(--article-color);
 }
 
 .extraLarge {
