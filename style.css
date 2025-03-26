@@ -30,6 +30,8 @@ body {
     font-weight: 700;
     font-style: normal;
     background-color: var(--background-color);
+    font-family: roboto;
+    
 }
 
 
@@ -165,4 +167,12 @@ article h2 {
     width: 1000px;
     font-size: 30px;
     gap: 30px;
+}
+
+#popup{
+    display:none; 
+    background:white; 
+    padding:20px; 
+    border:1px 
+    solid black;
 }
