@@ -1,4 +1,6 @@
 
-function avisKlikk(url) {
-    location.href = url;
-}
+document.querySelectorAll("article").forEach(el => {
+    el.addEventListener('click', () => {
+        location.href = "/" + el.id + ".html";
+    });
+});
