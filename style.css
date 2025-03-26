@@ -141,3 +141,11 @@ article {
     margin: auto;
     width: 1000px;
 }
+
+#popup{
+    display:none; 
+    background:white; 
+    padding:20px; 
+    border:1px 
+    solid black;
+}
