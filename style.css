@@ -12,6 +12,19 @@ img {
     width: 100%;
 }
 
+:root {
+    --background-color: white;
+    --text-color: black;
+    --nav-color: grey;
+    --nav-text-color: white;
+}
+
+.darkmode {
+    --background-color: rgb(53, 53, 53);
+    --text-color: white;
+    --nav-color: rgb(32, 32, 32);
+}
+
 body {
     font-family: "Lato", serif;
     font-weight: 700;
@@ -29,7 +42,7 @@ nav {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown{
+.dropdown {
     position: relative;
 }
 
@@ -57,7 +70,7 @@ button:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    transition: all 0.5s; 
+    transition: all 0.5s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -65,7 +78,7 @@ button:hover {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    
+
 }
 
 
@@ -82,40 +95,38 @@ button:hover {
     font-size: 60px;
 }
 
-.container{
+.container {
     max-width: 900px;
     margin: auto;
     background-color: white;
 }
 
-.grid{
+.grid {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px ;
+    gap: 20px;
 }
 
-article{
+article {
     min-height: 300px;
     grid-column: span 3;
     background-color: rgb(224, 211, 211);
 }
 
-.extraLarge{
+.extraLarge {
     grid-column: span 12;
 }
 
-.large{
+.large {
     grid-column: span 6;
 }
 
-.small{
+.small {
     grid-column: span 3;
 
 }
 
-.tekst{
+.tekst {
     padding: 20px;
 }
-
-
