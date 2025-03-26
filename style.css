@@ -132,3 +132,11 @@ article {
 .tekst {
     padding: 20px;
 }
+
+.hovedinnhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+}
