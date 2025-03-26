@@ -146,3 +146,50 @@ article {
     font-size: 30px;
     gap: 30px;
 }
+
+
+.karusell-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 930px;
+    margin: auto;
+}
+.karusell {
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.karusell::-webkit-scrollbar {
+    display: none;
+}
+.karusell-article {
+    min-width: 300px;
+    height: 400px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.karusell-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.venstre {
+    left: 10px;
+}
+.høyre {
+    right: 10px;
+}
