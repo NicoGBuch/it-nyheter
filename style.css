@@ -125,6 +125,7 @@ article {
     background-color: var(--article-color);
     display: flex;
     cursor: pointer;
+    overflow: hidden;
 }
 
 article img {
@@ -153,6 +154,7 @@ article h2 {
 }
 
 .tekst {
+    overflow-wrap: break-word;
     padding: 20px;
 }
 
