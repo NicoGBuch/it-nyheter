@@ -100,7 +100,7 @@ button:hover {
 .container {
     max-width: 900px;
     margin: auto;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 .grid {
@@ -113,7 +113,7 @@ button:hover {
 article {
     min-height: 300px;
     grid-column: span 3;
-    background-color: rgb(224, 211, 211);
+    background-color: white;
 }
 
 .extraLarge {
