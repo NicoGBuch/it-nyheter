@@ -10,16 +10,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
+        .hovedinnhold {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            width: 900px;
+            font-size: 20px;
+            gap: 30px;
+        }
+
+        .hovedinnhold p {
+            width: 100%;
+        }
+
         .overskrift-artikkel {
             margin-bottom: 30px;
-            margin-left: 30px;
+            
         }
 
         .underoverskrift {
             margin-bottom: 35px;
             font-size: 25px;
-            margin-left: 40px;
+            
             font-weight: 100;
+        }
+
+        .underoverskrift-skrevet-av {
+            margin-bottom: 35px;
+            font-size: 20px;
+           
+            font-weight: 100;
+            width: 100%;
         }
 
         .bildeartikkel {
@@ -35,10 +57,10 @@
         }
 
         .spurte-chat-boks {
-            border:  1px solid black;
+            border: 1px solid black;
             padding: 40px;
             font-size: 15px;
-        
+
         }
 
         .spurte-chat-boks>p {
@@ -60,7 +82,47 @@
 
         .tall-inniboks {
             font-weight: bold;
-            font-size: 40px;
+            font-size: 20px;
+        }
+
+        /* Oppsummering boks */
+        .oppsumering-boks {
+            border-radius: 45px;
+            background-color: rgb(193, 211, 217);
+            padding: 45px;
+            font-size: 15px;
+            width: 700px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .oppsumering-innhold {
+            max-height: 50px;
+            overflow: hidden; 
+        }
+
+        .oppsumering-innhold > p {
+            margin-bottom: 20px;
+        }
+
+        .oppsumering-boks.expanded .oppsumering-innhold {
+            max-height: 1000px;
+            /* Øk høyden når teksten er utvidet */
+        }
+
+        .vis-mer-knapp {
+            background-color: rgb(64, 64, 150);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-family: roboto;
         }
     </style>
 
@@ -86,20 +148,56 @@
 
     <div class="avisBody">
         <div class="midt">
-            <h1 class="overskrift-artikkel"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade telefonen
+            <h1 class="overskrift-artikkel"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade
+                telefonen
                 40 ganger </h1>
 
-            <p class="underoverskrift" > Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye strøm som går med, er
+            <p class="underoverskrift"> Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye
+                strøm som går med, er
                 ekspertene uenige om. Vi spurte ChatGPT selv.</p>
+
+            <p class="underoverskrift-skrevet-av"> Skrevet av: Mari Lund Wictorsen - Tord Magnus Dyrkorn</p>
         </div>
 
         <img class="bildeartikkel" src="bilder/chatgptBilde.webp">
 
-        <section class="hovedinnhold">
+        <div class="hovedinnhold">
 
-        </div>
 
- 
+            <div class="oppsumering-boks">
+                <p class="tittel-inniboks">Oppsumering</p>
+                <div class="oppsumering-innhold">
+                    <p> <span class="tall-inniboks"> 1. </span>
+                        <span class="bold-inniboks"> Estimert energiforbruk per prompt: </span> Raghavendra Selvan fra
+                        Københavns Universitet hevder
+                        at en enkelt prompt til ChatGPT bruker 0,19 kWh,
+                        tilsvarende å lade en mobiltelefon 40 ganger.
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 2. </span>
+                        <span class="bold-inniboks">Uenighet blant forskere: </span> Det er stor usikkerhet om det
+                        faktiske
+                        strømforbruket.
+                        Selvans estimat kan være et "worst case scenario",
+                        og flere eksperter mener studien er begrenset.
+                    </p>
+
+                    <p> <span class="tall-inniboks">3. </span>
+                        <span class="bold-inniboks">Infrastruktur og modellkompleksitet: </span> Strømforbruket varierer
+                        avhengig av
+                        databehandlingsressurser, servereffektivitet og kompleksiteten i forespørslene.
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 4. </span>
+                        <span class="bold-inniboks"> Miljøpåvirkning:</span> KI-modeller som ChatGPT krever betydelig
+                        energi
+                        og vannforbruk
+                        for nedkjøling, noe som øker bekymringer om bærekraft og energiforbruk i datasentre.
+                    </p>
+                </div>
+                <button class="vis-mer-knapp">Vis mer</button>
+            </div>
+
 
             <p>Hva skal jeg gi til søsteren min i bursdagsgave? Hvor bør jeg reise neste sommer? Hver gang du stiller et
                 spørsmål til språkmodellen ChatCPT, utløser det like mye strømforbruk som om du fullader telefonen. </p>
@@ -155,44 +253,56 @@
                 kjennskap til hvordan Selvan har regnet ut sine anslag. </p>
 
 
-            
-            <div class="spurte-chat-boks" > 
+
+            <div class="spurte-chat-boks">
 
                 <p class="tittel-inniboks"> Vi har spurt ChatGPT om hvor mye strøm den bruker </p>
 
                 <div class="linje-inniboks"></div>
 
-                <p> <span class="bold-inniboks"> Instruks (prompt): </span>  «I gjennomsnitt hvor mye strøm (målt i kWh) bruker ChatGPT på å motta, 
-                analysere og svare på ett prompt?» </p>
+                <p> <span class="bold-inniboks"> Instruks (prompt): </span> «I gjennomsnitt hvor mye strøm (målt i kWh)
+                    bruker
+                    ChatGPT på å motta,
+                    analysere og svare på ett prompt?» </p>
 
-                <p> <span class="bold-inniboks"> Svar: </span>  «Energiforbruket til ChatGPT for å behandle et enkelt spørsmål kan 
-                variere betydelig avhengig av flere faktorer, som størrelsen på modellen, kompleksiteten til spørsmålet, 
-                og infrastrukturen som brukes til å kjøre modellen. </p>
+                <p> <span class="bold-inniboks"> Svar: </span> «Energiforbruket til ChatGPT for å behandle et enkelt
+                    spørsmål
+                    kan
+                    variere betydelig avhengig av flere faktorer, som størrelsen på modellen, kompleksiteten til
+                    spørsmålet,
+                    og infrastrukturen som brukes til å kjøre modellen. </p>
 
                 <p> Når det gjelder spesifikke tall, finnes det ingen offisiell, nøyaktig kilde som gir et spesifikt
-                gjennomsnitt for energiforbruket til ChatGPT per forespørsel. Imidlertid kan vi gi et anslag basert 
-                på informasjon om lignende modeller. </p>
+                    gjennomsnitt for energiforbruket til ChatGPT per forespørsel. Imidlertid kan vi gi et anslag basert
+                    på informasjon om lignende modeller. </p>
 
-                <p class="bold-inniboks"> Estimater og Faktorer </p> 
+                <p class="bold-inniboks"> Estimater og Faktorer </p>
 
-                <p> <span class="tall-inniboks"> 1. </span> Databehandlingsressurser: Store språkmodeller som GPT-3 (og lignende som GPT-4) krever
-                     betydelige databehandlingsressurser. For å kjøre disse modellene bruker servere som kjører på 
-                     grafikkprosessorer (GPUs) eller spesialiserte maskinlæringsbrikker (TPUs), som har høye energikostnader.</p>
+                <p> <span class="tall-inniboks"> 1. </span> Databehandlingsressurser: Store språkmodeller som GPT-3 (og
+                    lignende
+                    som GPT-4) krever
+                    betydelige databehandlingsressurser. For å kjøre disse modellene bruker servere som kjører på
+                    grafikkprosessorer (GPUs) eller spesialiserte maskinlæringsbrikker (TPUs), som har høye
+                    energikostnader.</p>
 
-                <p> <span class="tall-inniboks"> 2. </span> Estimater fra Lignende Modeller: Ifølge estimater kan en stor språkmodell 
+                <p> <span class="tall-inniboks"> 2. </span> Estimater fra Lignende Modeller: Ifølge estimater kan en
+                    stor
+                    språkmodell
                     bruke mellom 0.1 til 1 kWh per 20-50 spørsmål, avhengig av hvor stor modellen er, og hvor komplekse
-                     spørsmålene er. Dette tilsier at et enkelt svar fra en modell som ChatGPT kunne bruke et sted mellom 
-                     0.002 og 0.05 kWh per prompt. </p>
+                    spørsmålene er. Dette tilsier at et enkelt svar fra en modell som ChatGPT kunne bruke et sted mellom
+                    0.002 og 0.05 kWh per prompt. </p>
 
-                <p> <span class="tall-inniboks">  3. </span> Infrastrukturens Effektivitet: Energikostnaden kan også variere avhengig av 
+                <p> <span class="tall-inniboks"> 3. </span> Infrastrukturens Effektivitet: Energikostnaden kan også
+                    variere
+                    avhengig av
                     effektiviteten til datasenteret som brukes, og den faktiske bruken av energi til nedkjøling,
-                     strømlevering, og andre faktorer knyttet til drift av servere. </p>
+                    strømlevering, og andre faktorer knyttet til drift av servere. </p>
 
                 <p class="bold-inniboks"> Oppsummering</p>
 
-                <p> Energiforbruket for ett enkelt spørsmål til ChatGPT kan variere, 
+                <p> Energiforbruket for ett enkelt spørsmål til ChatGPT kan variere,
                     men det anslås å være i området 0.002 til 0.05 kWh. Det eksakte tallet vil avhenge
-                     av spesifikke forhold knyttet til modellen og infrastrukturen som brukes til å drifte den.»</p>
+                    av spesifikke forhold knyttet til modellen og infrastrukturen som brukes til å drifte den.»</p>
             </div>
 
             <p class="bold-tekster">Tørste maskiner</p>
@@ -201,21 +311,21 @@
 
             <p> Dette er hovedforklaringen, ifølge forskeren på Københavns Universitet: </p>
 
-            <p> – Språkmodellene, som generativ kunstig intelligens er bygget på, 
+            <p> – Språkmodellene, som generativ kunstig intelligens er bygget på,
                 skal utføre ekstremt komplekse ting. For eksempel å oversette eller
-                 skape bilder ut fra tekstforespørsler. Det betyr virkelig mye data, fordi de må mates med milliarder
-                  av eksempler.</p>
-            
-            <p> I tillegg kreves det vann for å kjøle ned datasentrene. 
-                Forbes skrev tidligere i år at en enkelt ChatGPT-samtale 
+                skape bilder ut fra tekstforespørsler. Det betyr virkelig mye data, fordi de må mates med milliarder
+                av eksempler.</p>
+
+            <p> I tillegg kreves det vann for å kjøle ned datasentrene.
+                Forbes skrev tidligere i år at en enkelt ChatGPT-samtale
                 bruker vann tilsvarende en vanlig plastflaske.</p>
 
-            <p> Mange stiller seg spørsmålet om verdens energiproduksjon er klar for kunstig intelligens. 
-                Meta-toppsjef Mark Zuckerberg har sagt i en podkast at hvis Meta fikk tilgang til mer energi, 
+            <p> Mange stiller seg spørsmålet om verdens energiproduksjon er klar for kunstig intelligens.
+                Meta-toppsjef Mark Zuckerberg har sagt i en podkast at hvis Meta fikk tilgang til mer energi,
                 ville man bygget vesentlig større datasentre enn i dag.</p>
 
-            
-         
+
+
 
             <p>Skrevet av ...</p>
 
@@ -223,10 +333,12 @@
                 tekst her
             </p>
 
-        </section>
+        </div>
+
+    </div>
     </div>
 
-    <script src="script.js">
+    <script>
         
     </script>
 
