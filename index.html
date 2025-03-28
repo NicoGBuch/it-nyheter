@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avis</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
 </head>
 
 <body onload="onload()">
@@ -28,64 +29,107 @@
             <i  id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
         </nav>
     </header>
+
     <main>
-        <div class="container">
-            <div class="grid">
-                <article class="extraLarge" id="energitilchat">
-                    <img src="bilder/chatgptBilde.webp" alt="artikkel1">
-                    <div class="tekst">
-                        <h2>ChatGPT er miljøskadelig</h2>
-                        <h1>ChatGPT er miljøskadelig</h1>
-                    </div>
-                </article>
-                <article class="small" id="artikkel1">
-                    <img src="placeholder.png" alt="artikkel2">
-                    <div class="tekst">
-                        <p>Eksempeltekst</p>
-                    </div>
-                </article>
-                <article class="small" id="artikkel2">
-                    <img src="placeholder.png" alt="artikkel3">
-                    <div class="tekst">
-                      <p>Eksempeltekst</p>
-                      <h1>Overskrift</h1>
-                    </div>
-                </article>
-                <article class="large" id="artikkel3">
-                    <img src="placeholder.png" alt="artikkel4">
-                    <div class="tekst">
-                      <p>Eksempeltekst</p>
-                      <h1>Overskrift</h1>
-                    </div>
-                </article>
-                <article class="large" id="artikkel4">
-                    <img src="placeholder.png" alt="artikkel5">
-                </article>
-                <article class="extraLarge" id="artikkel5">
-                    <h1>Overskrift</h1>
-                </article>
-                <article class="small" id="artikkel6">
-                    <h1>Overskrift</h1>
-                </article>
+        <div class="mainAvis">
+            <article class="extraLarge" id="energitilchat">
+                <img src="bilder/chatgptBilde.webp" alt="energitilchat">
+                <div class="tekst">
+                    <h2>ChatGPT er miljøskadelig</h2>
+                    <h1>ChatGPT er miljøskadelig</h1>
+                </div>
+            </article>
+
+            <article class="extraLarge">
+                <img src="" alt="artikkel1">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+            
+            <div class="karusell-container">
+                <button class="karusell-button venstre" onclick="scrollKarusell(-1)">&#10094;</button>  <!-- &#10094;.  er for pilen -->
+                <div class="karusell" id="karusell">
+                    <div class="karusell-article">Artikkel 1</div>
+                    <div class="karusell-article">Artikkel 2</div>
+                    <div class="karusell-article">Artikkel 3</div>
+                    <div class="karusell-article">Artikkel 4</div>
+                    <div class="karusell-article">Artikkel 5</div>
+                </div>
+                <button class="karusell-button høyre" onclick="scrollKarusell(1)">&#10095;</button>
             </div>
+
+            <article class="small">
+                <img src="" alt="artikkel2">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="small">
+                <img src="" alt="artikkel3">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="large">
+                <img src="" alt="artikkel4">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="large">
+                <img src="" alt="artikkel5">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="large">
+                <img src="" alt="artikkel5">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="extralarge">
+                <img src="" alt="artikkel5">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
+
+            <article class="small">
+                <img src="" alt="artikkel6">
+                <div class="tekst">
+                    <h2>noe som står her</h2>
+                    <h1>- noe som står her</h1>
+                </div>
+            </article>
         </div>
 
-        <div class="karusell-container">
-            <button class="karusell-button venstre" onclick="scrollKarusell(-1)">&#10094;</button>  <!-- &#10094;.  er for pilen -->
-            <div class="karusell" id="karusell">
-                <div class="article">Artikkel 1</div>
-                <div class="article">Artikkel 2</div>
-                <div class="article">Artikkel 3</div>
-                <div class="article">Artikkel 4</div>
-                <div class="article">Artikkel 5</div>
-            </div>
-            <button class="karusell-button høyre" onclick="scrollKarusell(1)">&#10095;</button>
+        <div class="sideAvis">
+            <article class="small">
+                <img src="" alt="artikkel2">
+                <div class="tekst">
+                    <h2>Side!</h2>
+                    <h1>Side!</h1>
+                </div>
+            </article>
         </div>
-        
+
     </main>
     <footer></footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>

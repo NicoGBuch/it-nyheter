@@ -16,7 +16,7 @@ img {
     --text-color: black;
     --nav-color: #fff;
     --nav-text-color: white;
-    --article-color: rgb(224, 211, 211);
+    --article-color: #ffffff;
     --button-color: #f5f5f5;
     --button-text-color: black;
     --icon-color: black;
@@ -96,8 +96,62 @@ button:hover {
 }
 
 
-
 /* Avisartikkler */
+
+.forsideBody {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    padding: 50px auto;
+    grid-template-columns: 600px 200px;
+}
+
+.mainAvis {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin: 100px;
+}
+
+.sideAvis {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 20px; */
+}
+
+article{
+    min-height: 300px;
+    grid-column: span 3;
+    background-color: white;
+}
+
+.extraLarge{
+    grid-column: span 12;
+}
+
+.large{
+    grid-column: span 6;
+}
+
+.small{
+    grid-column: span 3;
+
+}
+
+.tekst{
+    padding: 20px;
+}
+
 
 .avisBody {
     padding: 60px;
@@ -108,6 +162,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 350px;
     margin: auto;
 }
 
@@ -129,6 +184,52 @@ button:hover {
     width: 900px;
     font-size: 20px;
     gap: 30px;
+}
+
+.karusell-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 930px;
+    margin: auto;
+}
+.karusell {
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.karusell::-webkit-scrollbar {
+    display: none;
+}
+.karusell-article {
+    min-width: 300px;
+    height: 200px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.karusell-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.venstre {
+    left: 10px;
+}
+.høyre {
+    right: 10px;
 }
 
 
