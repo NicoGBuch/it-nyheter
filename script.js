@@ -40,7 +40,7 @@ function onload() {
     }
 
     document.querySelectorAll("article").forEach(el => {
-        if (el.id != "karusellArticle") {
+        if (el.id != "karusell") {
             el.addEventListener('click', () => {
                 location.href = "/" + el.id + ".html";
             });
