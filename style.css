@@ -94,6 +94,7 @@ button:hover {
 
 .avisBody {
     padding: 60px;
+    
 }
 
 .midt {
@@ -111,6 +112,16 @@ button:hover {
     max-width: 900px;
     margin: auto;
     background-color: #f5f5f5;
+}
+
+.hovedinnhold {
+   
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 900px;
+    font-size: 20px;
+    gap: 30px;
 }
 
 
@@ -165,15 +176,7 @@ article h2 {
     padding: 20px;
 }
 
-.hovedinnhold {
-   
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 1000px;
-    font-size: 30px;
-    gap: 30px;
-}
+
 
 
 .karusell-container {
