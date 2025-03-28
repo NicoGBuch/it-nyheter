@@ -128,10 +128,10 @@
 
 </head>
 
-<body>
+<body onload="onload()">
 
     <nav>
-        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="/"><i class="fas fa-home"></i> Home</a>
         <a href="#news"><i class="fas fa-newspaper"></i> News</a>
         <div class="dropdown">
             <button class="dropbtn"></i> Dropdown
@@ -143,6 +143,7 @@
                 <a href="#"><i class="fas fa-link"></i> Link 3</a>
             </div>
         </div>
+        <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
     </nav>
 
     <div class="avisBody">
@@ -338,18 +339,7 @@
     </div>
 
     <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const oppsumeringBoks = document.querySelector(".oppsumering-boks");
-            const visMerButton = document.querySelector(".vis-mer-knapp");
-
-            visMerButton.addEventListener("click", function () {
-                oppsumeringBoks.classList.toggle("expanded");
-                visMerButton.textContent = oppsumeringBoks.classList.contains("expanded")
-                    ? "Vis mindre"
-                    : "Vis mer";
-            });
-        });
+        
     </script>
 
 </body>
