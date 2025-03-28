@@ -4,8 +4,10 @@ function scrollKarusell(direction) {
     karusell.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
-document.querySelectorAll("article").forEach(el => {
-    el.addEventListener('click', () => {
-        location.href = "/" + el.id + ".html";
-    });
-});
+function avisKlikk(url) {
+    location.href = url;
+}
+
+function switchColor() {
+    document.body.classList.toggle("darkmode")
+}

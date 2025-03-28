@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        #overskrift-ih {
+        .overskrift-artikkel {
             margin-bottom: 30px;
             margin-left: 30px;
+        }
 
+        .underoverskrift {
+            margin-bottom: 35px;
+            font-size: 25px;
+            margin-left: 40px;
+            font-weight: 100;
         }
 
         .bildeartikkel {
@@ -31,19 +37,30 @@
         .spurte-chat-boks {
             border:  1px solid black;
             padding: 40px;
-            
+            font-size: 15px;
+        
+        }
 
+        .spurte-chat-boks>p {
+            margin: 25px;
         }
 
         .tittel-inniboks {
-            font-weight: 500;
+            font-weight: bold;
             margin-bottom: 20px;
+            color: rgb(64, 64, 150);
+            font-size: 30px;
         }
 
         .linje-inniboks {
             height: 2px;
             background-color: grey;
             margin-bottom: 20px;
+        }
+
+        .tall-inniboks {
+            font-weight: bold;
+            font-size: 40px;
         }
     </style>
 
@@ -68,15 +85,20 @@
 
     <div class="avisBody">
         <div class="midt">
-            <h1 id="overskrift-ih"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade telefonen
+            <h1 class="overskrift-artikkel"> Dansk forsker: Ett spørsmål til ChatGPT krever like mye energi som å lade telefonen
                 40 ganger </h1>
-            <p> Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye strøm som går med, er
+
+            <p class="underoverskrift" > Kunstig intelligens krever store mengder strøm og vann. Men akkurat hvor mye strøm som går med, er
                 ekspertene uenige om. Vi spurte ChatGPT selv.</p>
         </div>
 
         <img class="bildeartikkel" src="bilder/chatgptBilde.webp">
 
         <section class="hovedinnhold">
+
+        </div>
+
+ 
 
             <p>Hva skal jeg gi til søsteren min i bursdagsgave? Hvor bør jeg reise neste sommer? Hver gang du stiller et
                 spørsmål til språkmodellen ChatCPT, utløser det like mye strømforbruk som om du fullader telefonen. </p>
@@ -150,17 +172,49 @@
                 gjennomsnitt for energiforbruket til ChatGPT per forespørsel. Imidlertid kan vi gi et anslag basert 
                 på informasjon om lignende modeller. </p>
 
+                <p class="bold-inniboks"> Estimater og Faktorer </p> 
 
+                <p> <span class="tall-inniboks"> 1. </span> Databehandlingsressurser: Store språkmodeller som GPT-3 (og lignende som GPT-4) krever
+                     betydelige databehandlingsressurser. For å kjøre disse modellene bruker servere som kjører på 
+                     grafikkprosessorer (GPUs) eller spesialiserte maskinlæringsbrikker (TPUs), som har høye energikostnader.</p>
+
+                <p> <span class="tall-inniboks"> 2. </span> Estimater fra Lignende Modeller: Ifølge estimater kan en stor språkmodell 
+                    bruke mellom 0.1 til 1 kWh per 20-50 spørsmål, avhengig av hvor stor modellen er, og hvor komplekse
+                     spørsmålene er. Dette tilsier at et enkelt svar fra en modell som ChatGPT kunne bruke et sted mellom 
+                     0.002 og 0.05 kWh per prompt. </p>
+
+                <p> <span class="tall-inniboks">  3. </span> Infrastrukturens Effektivitet: Energikostnaden kan også variere avhengig av 
+                    effektiviteten til datasenteret som brukes, og den faktiske bruken av energi til nedkjøling,
+                     strømlevering, og andre faktorer knyttet til drift av servere. </p>
+
+                <p class="bold-inniboks"> Oppsummering</p>
+
+                <p> Energiforbruket for ett enkelt spørsmål til ChatGPT kan variere, 
+                    men det anslås å være i området 0.002 til 0.05 kWh. Det eksakte tallet vil avhenge
+                     av spesifikke forhold knyttet til modellen og infrastrukturen som brukes til å drifte den.»</p>
             </div>
 
+            <p class="bold-tekster">Tørste maskiner</p>
 
+            <p> At kunstig intelligens (KI) er energislukende, er det likevel lite tvil om.</p>
 
+            <p> Dette er hovedforklaringen, ifølge forskeren på Københavns Universitet: </p>
 
+            <p> – Språkmodellene, som generativ kunstig intelligens er bygget på, 
+                skal utføre ekstremt komplekse ting. For eksempel å oversette eller
+                 skape bilder ut fra tekstforespørsler. Det betyr virkelig mye data, fordi de må mates med milliarder
+                  av eksempler.</p>
+            
+            <p> I tillegg kreves det vann for å kjøle ned datasentrene. 
+                Forbes skrev tidligere i år at en enkelt ChatGPT-samtale 
+                bruker vann tilsvarende en vanlig plastflaske.</p>
 
+            <p> Mange stiller seg spørsmålet om verdens energiproduksjon er klar for kunstig intelligens. 
+                Meta-toppsjef Mark Zuckerberg har sagt i en podkast at hvis Meta fikk tilgang til mer energi, 
+                ville man bygget vesentlig større datasentre enn i dag.</p>
 
-
-
-
+            
+         
 
             <p>Skrevet av ...</p>
 
@@ -170,6 +224,10 @@
 
         </section>
     </div>
+
+    <script>
+        
+    </script>
 
 </body>
 
