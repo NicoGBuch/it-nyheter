@@ -91,14 +91,35 @@ button:hover {
 
 /* Avisartikkler */
 
-.mainAvis {
-    max-width: 900px;
-    margin: auto;
+.forsideBody {
+    display: flex;
+    align-items: center;
+}
 
-    margin-top: 50px;
+main {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    display: grid;
+    padding: 50px auto;
+    grid-template-columns: 600px 200px;
+}
+
+.mainAvis {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px ;
+    gap: 20px;
+    margin: 100px;
+}
+
+.sideAvis {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 20px; */
 }
 
 article{
