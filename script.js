@@ -27,9 +27,9 @@ function switchColor() {
 function onload() {
     const isDarkMode = localStorage.getItem("darkmode") === "true";
     const bodyElement = document.body;
-    
+
     bodyElement.classList.toggle("darkmode", isDarkMode);
-    
+
     const themeIcon = document.getElementById("theme-icon");
     if (isDarkMode) {
         themeIcon.classList.remove('fa-moon');
@@ -38,4 +38,10 @@ function onload() {
         themeIcon.classList.remove('fa-sun');
         themeIcon.classList.add('fa-moon');
     }
+
+    document.querySelectorAll("article").forEach(el => {
+        el.addEventListener('click', () => {
+            location.href = "/" + el.id + ".html";
+        });
+    });
 }
