@@ -10,6 +10,7 @@ function avisKlikk(url) {
 
 function switchColor() {
     const wasDarkMode = localStorage.getItem("darkmode") === "true";
+    console.log(wasDarkMode);
     localStorage.setItem("darkmode", !wasDarkMode);
     const bodyElement = document.querySelector("body");
     bodyElement.classList.toggle("darkmode", !wasDarkMode);
