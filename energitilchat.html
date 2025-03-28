@@ -4,147 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inger Helene artikkel</title>
+    <title>ChatGPT Energi Forbruk</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spesefikk-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        .hovedinnhold {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: auto;
-            width: 900px;
-            font-size: 20px;
-            gap: 30px;
-        }
+        
 
-        .hovedinnhold p {
-            width: 100%;
-        }
-
-        .overskrift-artikkel {
-            margin-bottom: 30px;
-            
-        }
-
-        .underoverskrift {
-            margin-bottom: 35px;
-            font-size: 25px;
-            
-            font-weight: 100;
-        }
-
-        .underoverskrift-skrevet-av {
-            margin-bottom: 35px;
-            font-size: 20px;
-           
-            font-weight: 100;
-            width: 100%;
-        }
-
-        .bildeartikkel {
-            margin-bottom: 40px;
-        }
-
-        .bold-tekster {
-            font-weight: bold;
-        }
-
-        .bold-inniboks {
-            font-weight: bold;
-        }
-
-        .spurte-chat-boks {
-            border: 1px solid black;
-            padding: 40px;
-            font-size: 15px;
-
-        }
-
-        .spurte-chat-boks>p {
-            margin: 25px;
-        }
-
-        .tittel-inniboks {
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: rgb(64, 64, 150);
-            font-size: 30px;
-        }
-
-        .linje-inniboks {
-            height: 2px;
-            background-color: grey;
-            margin-bottom: 20px;
-        }
-
-        .tall-inniboks {
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        /* Oppsummering boks */
-        .oppsumering-boks {
-            border-radius: 45px;
-            background-color: rgb(193, 211, 217);
-            padding: 45px;
-            font-size: 15px;
-            width: 700px;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 30px;
-        }
-
-        .oppsumering-innhold {
-            max-height: 50px;
-            overflow: hidden; 
-        }
-
-        .oppsumering-innhold > p {
-            margin-bottom: 20px;
-        }
-
-        .oppsumering-boks.expanded .oppsumering-innhold {
-            max-height: 1000px;
-            /*  høyden når teksten er utvidet */
-        }
-
-        .vis-mer-knapp {
-            background-color: rgb(64, 64, 150);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            width: 100%;
-            text-align: center;
-            font-size: 16px;
-            font-family: roboto;
-        }
+      
+       
     </style>
 
 </head>
 
 <body onload="onload()">
 
-    <nav>
-        <a href="/"><i class="fas fa-home"></i> Home</a>
-        <a href="#news"><i class="fas fa-newspaper"></i> News</a>
-        <div class="dropdown">
-            <button class="dropbtn"></i> Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#"><i class="fas fa-link"></i> Link 1</a>
-                <a href="#"><i class="fas fa-link"></i> Link 2</a>
-                <a href="#"><i class="fas fa-link"></i> Link 3</a>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="bilder/logo-BN.png" alt="logo" id="logo">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn"></i> Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-link"></i> Link 1</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 2</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 3</a>
+                </div>
             </div>
-        </div>
-        <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
-    </nav>
+            <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+        </nav>
+    </header>
 
     <div class="avisBody">
         <div class="midt">
@@ -330,16 +224,16 @@
 
 
 
-            <p>Skrevet av ...</p>
-
-            <p>
-                tekst her
-            </p>
+           
 
         </div>
 
     </div>
     </div>
+
+    <footer>
+        Footer her
+    </footer>
 
     <script src="script.js">
        
