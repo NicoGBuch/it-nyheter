@@ -108,7 +108,7 @@
 
         .oppsumering-boks.expanded .oppsumering-innhold {
             max-height: 1000px;
-            /* Øk høyden når teksten er utvidet */
+            /*  høyden når teksten er utvidet */
         }
 
         .vis-mer-knapp {
@@ -236,6 +236,9 @@
                 er at det er en noe begrenset studie. De fokuserer på ett spesifikt område av kunstig intelligens, sier
                 han, ifølge Forskning.no. </p>
 
+            
+                <img src="bilder/energibrukchat.jpeg" alt="">
+
             <p> En annen forsker som er skeptisk til tallene, er Jonas Kristiansen Nøland. </p>
 
 
@@ -339,7 +342,17 @@
     </div>
 
     <script>
-        
+        document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= laster inn html-en i dokumentet før
+            const oppsumeringBoks = document.querySelector(".oppsumering-boks");
+            const visMerKnapp = document.querySelector(".vis-mer-knapp");
+
+            visMerKnapp.addEventListener("click", function () {
+                oppsumeringBoks.classList.toggle("expanded");
+                visMerKnapp.textContent = oppsumeringBoks.classList.contains("expanded")
+                    ? "Vis mindre"
+                    : "Vis mer";
+            });
+        });
     </script>
 
 </body>
