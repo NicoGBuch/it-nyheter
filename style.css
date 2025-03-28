@@ -238,7 +238,7 @@ main {
 }
 
 article {
-    min-height: 300px;
+    /* min-height: 300px; */
     grid-column: span 3;
     background-color: var(--article-color);
     display: flex;
