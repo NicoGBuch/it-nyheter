@@ -96,6 +96,10 @@ button:hover {
 
 }
 
+#logo{
+    width: 50px;
+}
+
 
 /* Avisartikkler */
 
@@ -171,7 +175,6 @@ main {
 }
 
 .hovedinnhold {
-   
     display: flex;
     flex-direction: column;
     margin: auto;
