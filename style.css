@@ -83,12 +83,8 @@ button:hover {
 
 }
 
-<<<<<<< Updated upstream
-
 
 /* Avisartikkler */
-=======
-<<<<<<< HEAD
 .container{
     max-width: 900px;
     margin: auto;
@@ -126,28 +122,21 @@ article{
 }
 
 
-=======
->>>>>>> Stashed changes
-
 .avisBody {
     padding: 60px;
 }
 
 .midt {
-<<<<<<< Updated upstream
     display: flex;
     flex-direction: column;
     align-items: center;
-=======
     padding: 0 350px;
->>>>>>> Stashed changes
     margin: auto;
 }
 
 .midt h1 {
     font-size: 60px;
 }
-<<<<<<< Updated upstream
 
 .container {
     max-width: 900px;
@@ -268,6 +257,3 @@ article h2 {
     border:1px 
     solid black;
 }
-=======
->>>>>>> ef02444a51a0d3ce80ee591022d1a2f63ead0961
->>>>>>> Stashed changes
