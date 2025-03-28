@@ -115,7 +115,6 @@ button:hover {
 }
 
 .hovedinnhold {
-   
     display: flex;
     flex-direction: column;
     margin: auto;
