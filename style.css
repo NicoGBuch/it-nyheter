@@ -90,13 +90,11 @@ button:hover {
 
 
 /* Avisartikkler */
-.container{
+
+.mainAvis {
     max-width: 900px;
     margin: auto;
-    background-color: lightblue;
-}
 
-.grid{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
