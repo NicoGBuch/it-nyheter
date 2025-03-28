@@ -13,8 +13,8 @@ img {
 
 :root {
     --background-color: #f5f5f5;
-    --h2-color: #202020;
-    --text-color: #090909;
+    --h2-color: #313131;
+    --text-color: #1f1f1f;
     --nav-color: #fff;
     --nav-text-color: white;
     --article-color: #ffffff;
@@ -23,6 +23,16 @@ img {
     --icon-color: black;
 }
 
+.darkmode {
+    --background-color: rgb(53, 53, 53);
+    --text-color: #ffffff;
+    --h2-color: #d5d5d5;
+    --nav-color: rgb(32, 32, 32);
+    --article-color: rgb(61, 61, 61);
+    --button-color: rgb(32, 32, 32);
+    --button-text-color: white;
+    --icon-color: white;
+}
 
 body {
     font-family: "Roboto", serif;
@@ -35,16 +45,6 @@ body {
 #theme-icon {
     color: var(--icon-color);
     cursor: pointer;
-}
-
-.darkmode {
-    --background-color: rgb(53, 53, 53);
-    --text-color: white;
-    --nav-color: rgb(32, 32, 32);
-    --article-color: rgb(61, 61, 61);
-    --button-color: rgb(32, 32, 32);
-    --button-text-color: white;
-    --icon-color: white;
 }
 
 nav {
