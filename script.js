@@ -9,5 +9,33 @@ function avisKlikk(url) {
 }
 
 function switchColor() {
-    document.body.classList.toggle("darkmode")
+    const wasDarkMode = localStorage.getItem("darkmode") === "true";
+    localStorage.setItem("darkmode", !wasDarkMode);
+    const bodyElement = document.querySelector("body");
+    bodyElement.classList.toggle("darkmode", !wasDarkMode);
+
+    const themeIcon = document.getElementById("theme-icon");
+    if (bodyElement.classList.contains('darkmode')) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
+}
+
+function onload() {
+    const isDarkMode = localStorage.getItem("darkmode") === "true";
+    const bodyElement = document.body;
+    
+    bodyElement.classList.toggle("darkmode", isDarkMode);
+    
+    const themeIcon = document.getElementById("theme-icon");
+    if (isDarkMode) {
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+    } else {
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+    }
 }

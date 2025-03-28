@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="onload()">
     <header>
         <nav>
             <a href="/"><i class="fas fa-home"></i> Home</a>
@@ -26,7 +26,7 @@
                     <a href="#"><i class="fas fa-link"></i> Link 3</a>
                 </div>
             </div>
-            <i class="fa-solid fa-moon" onclick="switchColor()"></i>
+            <i  id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
         </nav>
     </header>
 
@@ -49,17 +49,19 @@
                 </div>
             </article>
             
-            <div class="karusell-container">
-                <button class="karusell-button venstre" onclick="scrollKarusell(-1)">&#10094;</button>  <!-- &#10094;.  er for pilen -->
-                <div class="karusell" id="karusell">
-                    <div class="karusell-article">Artikkel 1</div>
-                    <div class="karusell-article">Artikkel 2</div>
-                    <div class="karusell-article">Artikkel 3</div>
-                    <div class="karusell-article">Artikkel 4</div>
-                    <div class="karusell-article">Artikkel 5</div>
+            <article class="extraLarge">
+                <div class="karusell-container">
+                    <button class="karusell-button venstre" onclick="scrollKarusell(-1)">&#10094;</button>  <!-- &#10094;.  er for pilen -->
+                    <div class="karusell" id="karusell">
+                        <div class="karusell-article">Artikkel 1</div>
+                        <div class="karusell-article">Artikkel 2</div>
+                        <div class="karusell-article">Artikkel 3</div>
+                        <div class="karusell-article">Artikkel 4</div>
+                        <div class="karusell-article">Artikkel 5</div>
+                    </div>
+                    <button class="karusell-button høyre" onclick="scrollKarusell(1)">&#10095;</button>
                 </div>
-                <button class="karusell-button høyre" onclick="scrollKarusell(1)">&#10095;</button>
-            </div>
+            </article>
 
             <article class="small">
                 <img src="" alt="artikkel2">
