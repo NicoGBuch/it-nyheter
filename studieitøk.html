@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tittel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spesefikk-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        
+.itøk-boks {
+    display: flex;
+    margin: 40px;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 55px;
+    background-color: rgb(232, 169, 161);
+}
+
+.itøk-boks:hover {
+    background-color: rgb(233, 154, 144);
+    transition: 2s;
+}
+
+.søk-her-knapp {
+    background-color: blue;
+}
+
+
+      
+       
+    </style>
+
+</head>
+
+<body onload="onload()">
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="bilder/logo-BN.png" alt="logo" id="logo">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn"></i> Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-link"></i> Link 1</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 2</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 3</a>
+                </div>
+            </div>
+            <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+        </nav>
+    </header>
+
+    <div class="avisBody">
+        <div class="midt">
+            <h1 class="overskrift-artikkel"> ITØK - Nytt oppsiktsvekkende studie </h1>
+
+            <p class="underoverskrift"> Ved Universitetet i Bergen kombineres Informasjonsteknologi og økonomi, det har blitt et av norges mest ettertraktede studier.</p>
+
+            <p class="underoverskrift-skrevet-av"> Skrevet av: </p>
+        </div>
+
+        <img class="bildeartikkel" src="bilder/hovedbildeitøk.avif">
+
+        <div class="hovedinnhold">
+
+
+            <div class="oppsumering-boks">
+                <p class="tittel-inniboks">Oppsumering</p>
+                <div class="oppsumering-innhold">
+                    <p> <span class="tall-inniboks"> 1. </span>
+                        <span class="bold-inniboks"> Tittel</span> Innholde
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 2. </span>
+                        <span class="bold-inniboks">Tittel </span> Innhold
+                    </p>
+
+                    <p> <span class="tall-inniboks">3. </span>
+                        <span class="bold-inniboks">Tittel </span> Innhold
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 4. </span>
+                        <span class="bold-inniboks"> Tittel</span> Innhold
+                    </p>
+                </div>
+                <button class="vis-mer-knapp">Vis mer</button>
+            </div>
+
+
+            <div class="itøk-boks">
+                <div>
+                    <p class="bold-tekster">Varighet</p>
+                    <p> 5år </p>
+                </div>
+                <div>
+                    <p class="bold-tekster">Studieplasser</p>
+                    <p> 25 </p>
+                </div>
+                <div>
+                    <p class="bold-tekster">Studiepoeng</p>
+                    <p> 300 </p>
+                </div>
+                <div>
+                    <p class="bold-tekster">Studiestart</p>
+                    <p> Høst </p>
+                </div>
+                <div>
+                    <p class="bold-tekster">Undervisningspråk</p>
+                    <p> Norsk </p>
+                </div>
+            </div>
+
+
+
+            <p> ​Universitetet i Bergen (UiB) tilbyr det integrerte masterprogrammet i Informasjonsteknologi og økonomi (ITØK), et femårig sivilingeniørstudium.
+            </p>
+
+            <p>
+
+                Studiet har som mål å utdanne kandidater med bred kompetanse innen både teknologi og økonomi, noe som er høyt etterspurt i arbeidsmarkedet.
+            </p>
+
+            <p>
+                ITØK-studiet gir studentene en solid forståelse av temaer som big data, maskinlæring, finansteknologi (fintech) og kunstig intelligens, kombinert med grundig kunnskap i økonomisk teori og ferdigheter i programmering og dataanalyse. Dette gjør kandidatene i stand til å løse komplekse problemer i skjæringsfeltet mellom teknologi og økonomi.
+
+            </p>
+
+       
+
+            <p> Studiet er strukturert over ti semestre, hvor de første årene fokuserer på grunnleggende emner innen informasjonsteknologi, matematikk, statistikk og økonomi. Senere i studiet åpnes det for valgmuligheter som gir spesialisering mot spesifikke problemstillinger innen IKT og økonomi. I fjerde semester får studentene praktisk erfaring gjennom utplassering i bedrifter som Equinor, PwC, Stacc, Skatteetaten og Deloitte.</p>
+
+            <p> Opptak til ITØK er svært konkurransedyktig. I 2024 var poenggrensene 58,8 for primærkvoten og 62,5 for ordinær kvote. Kun 25 av over 400 søkere ble tatt opp, noe som understreker programmets attraktivitet. ​</p>
+
+            <p> Studentene på ITØK blir en del av et tett og engasjert miljø, med små klasser og nær oppfølging fra faglig stab. Linjeforeningen Enigma organiserer ulike studentaktiviteter og fungerer som et sosialt og faglig knutepunkt for studentene. </p>
+
+
+            <p> Søknadsfristen for opptak til ITØK-programmet er 15. april hvert år. For mer informasjon om programmet og opptakskrav, besøk UiBs nettsider. ​ </p>
+
+
+            <button class="søk-her-knapp"> 
+                Søk på Samordna opptak
+            <a href="https://www.samordnaopptak.no/info/"></a>
+            </button>
+            
+
+
+
+            <p> Tekst </p>
+
+            <p> Tekst</p>
+
+            <p> Tekst </p>
+
+            <p> Tekst </p>
+
+
+             <!--Sitat "boks"-->
+             <div class="direkte-sitat-boks"> 
+                <div class="utforming-direkte-sitat-boks">
+                    <div class="linje-direkte-sitat-boks"></div>
+                        <div>
+                        <p>Tekst
+                        </p> 
+                        <p class="hvem-direkte-sitat-boks">av hvem</p>
+                        </div>
+                </div>
+               </div> 
+
+
+            <!--Alternatriv boks til informasjon-->
+
+            <div class="spurte-chat-boks">
+
+                <p class="tittel-inniboks"> Alternativ boks hvis vil ha, </p>
+
+                <div class="linje-inniboks"></div>
+
+                <p> <span class="bold-inniboks"> Instruks (prompt): </span> «I gjennomsnitt hvor mye strøm (målt i kWh)
+                    bruker
+                    ChatGPT på å motta,
+                    analysere og svare på ett prompt?» </p>
+
+                <p> <span class="bold-inniboks"> Svar: </span> «Energiforbruket til ChatGPT for å behandle et enkelt
+                    spørsmål
+                    kan
+                    variere betydelig avhengig av flere faktorer, som størrelsen på modellen, kompleksiteten til
+                    spørsmålet,
+                    og infrastrukturen som brukes til å kjøre modellen. </p>
+
+                <p> Når det gjelder spesifikke tall, finnes det ingen offisiell, nøyaktig kilde som gir et spesifikt
+                    gjennomsnitt for energiforbruket til ChatGPT per forespørsel. Imidlertid kan vi gi et anslag basert
+                    på informasjon om lignende modeller. </p>
+
+                <p class="bold-inniboks"> Estimater og Faktorer </p>
+
+                <p> <span class="tall-inniboks"> 1. </span> Databehandlingsressurser: Store språkmodeller som GPT-3 (og
+                    lignende
+                    som GPT-4) krever
+                    betydelige databehandlingsressurser. For å kjøre disse modellene bruker servere som kjører på
+                    grafikkprosessorer (GPUs) eller spesialiserte maskinlæringsbrikker (TPUs), som har høye
+                    energikostnader.</p>
+
+                <p> <span class="tall-inniboks"> 2. </span> Estimater fra Lignende Modeller: Ifølge estimater kan en
+                    stor
+                    språkmodell
+                    bruke mellom 0.1 til 1 kWh per 20-50 spørsmål, avhengig av hvor stor modellen er, og hvor komplekse
+                    spørsmålene er. Dette tilsier at et enkelt svar fra en modell som ChatGPT kunne bruke et sted mellom
+                    0.002 og 0.05 kWh per prompt. </p>
+
+                <p> <span class="tall-inniboks"> 3. </span> Infrastrukturens Effektivitet: Energikostnaden kan også
+                    variere
+                    avhengig av
+                    effektiviteten til datasenteret som brukes, og den faktiske bruken av energi til nedkjøling,
+                    strømlevering, og andre faktorer knyttet til drift av servere. </p>
+
+                <p class="bold-inniboks"> Oppsummering</p>
+
+                <p> Energiforbruket for ett enkelt spørsmål til ChatGPT kan variere,
+                    men det anslås å være i området 0.002 til 0.05 kWh. Det eksakte tallet vil avhenge
+                    av spesifikke forhold knyttet til modellen og infrastrukturen som brukes til å drifte den.»</p>
+            </div>
+
+            <p class="bold-tekster">underoverskrift</p>
+
+            <p> Tekst</p>
+
+            <p> Tekst</p>
+
+            <p>Tekst</p>
+
+            <p>Tekst</p>
+
+            <p> Tekst</p>
+
+
+
+
+           
+
+        </div>
+
+    </div>
+    </div>
+
+    <footer>
+        Footer her
+    </footer>
+
+    <script src="script.js">
+       
+    </script>
+
+</body>
+
+</html>

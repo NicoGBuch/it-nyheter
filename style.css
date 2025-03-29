@@ -61,7 +61,7 @@ nav {
 }
 
 a,
-button {
+.button-dropdown {
     color: inherit;
     text-decoration: none;
     font-size: large;
@@ -78,7 +78,7 @@ button {
 }
 
 a:hover,
-button:hover {
+.button-dropdown {
     color: rgb(113, 90, 90);
 }
 
