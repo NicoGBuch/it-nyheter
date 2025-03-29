@@ -15,13 +15,14 @@
 
 .overskrift-artikkel {
     margin-bottom: 30px;
+    width: 100%;
     
 }
 
 .underoverskrift {
     margin-bottom: 35px;
     font-size: 25px;
-    
+    width: 100%;
     font-weight: 100;
 }
 
