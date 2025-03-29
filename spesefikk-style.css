@@ -168,4 +168,26 @@
 
 /*energi bruk til chat avslutt*/
 
+/*ITØK UIB - boks*/
+.itøk-boks {
+    display: flex;
+    margin: 40px;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 55px;
+    background-color: rgb(232, 169, 161);
+}
 
+.itøk-boks:hover {
+    background-color: rgb(233, 154, 144);
+    transition: 2s;
+}
+
+.søk-her-knapp {
+    background-color: rgba(82, 82, 232, 0.842);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 70px;
+    font-size: 25px;
+    border: none;
+}
