@@ -47,3 +47,17 @@ function onload() {
         }
     });
 }
+
+
+//oppsumering boks i artikkel
+document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= laster inn html-en i dokumentet før
+    const oppsumeringBoks = document.querySelector(".oppsumering-boks");
+    const visMerKnapp = document.querySelector(".vis-mer-knapp");
+
+    visMerKnapp.addEventListener("click", function () {
+        oppsumeringBoks.classList.toggle("expanded");
+        visMerKnapp.textContent = oppsumeringBoks.classList.contains("expanded")
+            ? "Vis mindre"
+            : "Vis mer";
+    });
+});

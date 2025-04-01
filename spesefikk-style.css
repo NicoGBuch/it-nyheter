@@ -1,0 +1,198 @@
+
+.hovedinnhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 900px;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.hovedinnhold p {
+    width: 100%;
+}
+
+.overskrift-artikkel {
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
+.underoverskrift {
+    margin-bottom: 35px;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 100;
+}
+
+.underoverskrift-skrevet-av {
+    margin-bottom: 35px;
+    font-size: 20px;
+   
+    font-weight: 100;
+    width: 100%;
+}
+
+.bildeartikkel {
+    margin-bottom: 40px;
+}
+
+.bold-tekster {
+    font-weight: bold;
+}
+
+.bold-inniboks {
+    font-weight: bold;
+}
+
+
+
+.tittel-inniboks {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(64, 64, 150);
+    font-size: 30px;
+}
+
+
+
+.tall-inniboks {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+ /* Oppsummering boks */
+ .oppsumering-boks {
+    border-radius: 45px;
+    background-color: rgb(193, 211, 217);
+    padding: 45px;
+    font-size: 15px;
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.oppsumering-innhold {
+    max-height: 50px;
+    overflow: hidden; 
+}
+
+.oppsumering-innhold > p {
+    margin-bottom: 20px;
+}
+
+.oppsumering-boks.expanded .oppsumering-innhold {
+    max-height: 1000px;
+    /*  høyden når teksten er utvidet */
+}
+
+.vis-mer-knapp {
+    background-color: rgb(64, 64, 150);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+/*Sitat boks*/
+
+.direkte-sitat-boks:hover {
+    background-color:#f0eaea;
+    transition: 2s;
+}
+
+.direkte-sitat-boks {
+    
+    width: 700px;
+    
+}
+
+.utforming-direkte-sitat-boks {
+    display: flex;
+    font-weight: 300;
+    font-family: oswald;
+    font-size: 35px;
+   
+}
+
+.utforming-direkte-sitat-boks>div>p {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.linje-direkte-sitat-boks {
+    width: 10px;
+    background-color: purple;
+}
+
+.hvem-direkte-sitat-boks {
+    font-style: oblique;
+    font-weight: 500;
+}
+    
+
+
+/*energi bruk til chat*/
+
+.spurte-chat-boks:hover {
+    background-color:#f0eaea;
+    transition: 2s;
+}
+
+.spurte-chat-boks {
+    border: 1px solid black;
+    padding: 40px;
+    font-size: 15px;
+
+}
+
+.spurte-chat-boks>p {
+    margin: 25px;
+}
+
+.linje-inniboks {
+    height: 2px;
+    background-color: grey;
+    margin-bottom: 20px;
+}
+
+/*energi bruk til chat avslutt*/
+
+/*ITØK UIB - boks*/
+.itøk-boks {
+    display: flex;
+    margin: 40px;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 55px;
+    background-color: rgb(232, 169, 161);
+}
+
+.itøk-boks:hover {
+    background-color: rgb(233, 154, 144);
+    transition: 2s;
+}
+
+.søk-her-knapp {
+    background-color: rgba(82, 82, 232, 0.842);
+    padding: 20px 40px;
+    color: white;
+    border-radius: 70px;
+    font-size: 25px;
+    border: none;
+}
+
+.søk-her-knapp:hover {
+    background-color: rgba(46, 46, 227, 0.916) ;
+    transition: 2s;
+}
