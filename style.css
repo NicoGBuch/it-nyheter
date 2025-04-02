@@ -224,9 +224,15 @@ main {
 .karusell-article span {
     position: absolute;
     z-index: 2;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    color: black;
     border-radius: 100%;
-    background-color: #f2f2f28e;
+    background-color: #ffffffca;
 }
 
 
