@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Energibransjen utsatt for cyberangrep</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spesefikk-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .bilde-vedsidenav {
+            display: flex;
+            flex-direction: row
+        }
+
+        .undertekst-bilde {
+            font-size: 17px;
+            font-weight: 200;
+            margin-top: 30px;
+            margin-left: 15px;
+        }
+
+        .bilde-vedsidenav-faktisk {
+            display: flex;
+            margin-left: 60px;
+        }
+    </style>
+
+</head>
+
+<body onload="onload()">
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="bilder/logo-BN.png" alt="logo" id="logo">
+            </a>
+            <div class="dropdown">
+                <button class="button-dropdown"></i> Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-link"></i> Link 1</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 2</a>
+                    <a href="#"><i class="fas fa-link"></i> Link 3</a>
+                </div>
+            </div>
+            <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+        </nav>
+    </header>
+
+    <div class="avisBody">
+        <div class="midt">
+            <h1 class="overskrift-artikkel">
+                Ny rapport advarer: Energi­bransjen er særlig utsatt for cyber­angrep </h1>
+
+            <p class="underoverskrift"> Et angrep på kraftnettet kan føre til strømbrudd og ramme kritiske funksjoner i
+                samfunnet, advarer Veritas.</p>
+
+            <p class="underoverskrift-skrevet-av"> Skrevet av: Thor-Albert Frøsland</p>
+        </div>
+
+        <img class="bildeartikkel" src="bilder/kraftnett.jpg">
+
+        <div class="hovedinnhold">
+
+
+            <div class="oppsumering-boks">
+                <p class="tittel-inniboks">Oppsumering</p>
+                <div class="oppsumering-innhold">
+                    <p> <span class="tall-inniboks"> 1. </span>
+                        <span class="bold-inniboks"> Manglende sikkerhetsoversikt:</span> 4 av 10 selskaper har ikke
+                        full kontroll på sikkerhetsrisikoer fra underleverandører.
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 2. </span>
+                        <span class="bold-inniboks">Sårbar kraftsektor: </span> Kritisk infrastruktur, spesielt
+                        kraftsektoren, er et hovedmål for cyberangrep.
+                    </p>
+
+                    <p> <span class="tall-inniboks">3. </span>
+                        <span class="bold-inniboks">Økt risiko med digitalisering: </span> Digitalisering av
+                        energibransjen øker sårbarheten for angrep.
+                    </p>
+
+                    <p> <span class="tall-inniboks"> 4. </span>
+                        <span class="bold-inniboks"> Manglende kompetanse:</span> 8 av 10 bedrifter mangler kunnskap til
+                        å håndtere sofistikerte angrep.8 av 10 bedrifter mangler kunnskap til å håndtere sofistikerte
+                        angrep.
+                    </p>
+                </div>
+                <button class="vis-mer-knapp">Vis mer</button>
+            </div>
+
+
+
+
+            <p> 4 av 10 norske selskaper oppgir at virksomheten deres ikke har full oversikt over sikkerhetsrisikoene
+                fra underleverandørene.
+            </p>
+
+            <p style="font-weight: 300;">
+
+                Nesten like mange oppgir at selskapet kan ha blitt infiltrert uten at leverandørene har rapportert
+                hendelsen.
+            </p>
+
+            <p>
+                Det kommer frem i en rapport fra DNV Cyber, en del av Det Norske Veritas, som ble lagt frem onsdag.
+
+            </p>
+
+
+
+            <p> DNV Cyber opplever dette som dramatisk, spesielt med tanke på myndighetenes trusselvurdering med økt
+                trusselnivå.</p>
+
+            <p style="font-weight: 300;"> – Flere har kontroll på inngangsdøra si, men de har ikke full kontroll på
+                bakdøra. Den står på gløtt, og det er hull i sikkerhetssystemet deres, sier direktør i DNV Cyber, Arve
+                Johan Kalleklev til NRK.</p>
+
+
+            <p class="bold-tekster"> Norge kan gå i svart </p>
+
+
+
+
+
+
+
+
+            <div class="bilde-vedsidenav">
+
+                <div>
+                    <p> DNV Cyber har spurt over 1100 bedrifter om hvordan de er rustet mot cyberangrep. Rapporten er
+                        nedslående, men det er også lysglimt. </p>
+
+                    <p style="font-weight: 300; margin-top: 30px;"> – Å vite at du har en utfordring er jo første steg i
+                        forhold til å gripe fatt
+                        i og gjøre noe med den utfordringen, sier Kalleklev. </p>
+                </div>
+
+                <div class="bilde-vedsidenav-faktisk">
+                    <img style="width: 200px; height: 200px;" src="bilder/person1cyber.avif" alt="">
+                    <p class="undertekst-bilde">– Fred kan ikke lenger tas for gitt. Samtidig ser vi en økende trend
+                        hvor leverandører blir brukt som inngangsport for cyberangrep mot kritiske samfunnsfunksjoner,
+                        sier direktør for DNV Cyber Arve Johan Kalleklev</p>
+                </div>
+
+            </div>
+
+
+
+
+            <img src="bilder/cybermobil.webp" alt="">
+
+            <p> Rapporten peker på at kraftsektoren er særlig utsatt og sårbar, og er et hovedmål for angrep fra
+                fremmede makter. Norges lange kystlinje og omfattende leverandørindustri er et hovedmål for
+                statssponsede cyberangrep. </p>
+
+            <p> Cybertrusler mot kraftsektoren er spesielt alvorlig fordi det kan ha konsekvenser for alt fra sikkerhet
+                for personell, til skader på miljø og kritisk infrastruktur.</p>
+
+            <p>– Et digitalt angrep kan føre til tap av data, bortfall av kritiske funksjoner og evnen til å
+                opprettholde kraftleveranse – noe som også påvirker Europa, sier Kalleklev. </p>
+
+            <p> – Et angrep i verdikjeden kan i ytterste konsekvens gi store dominoeffekter og ta ut flere aktører
+                samtidig, advarer han</p>
+
+
+            <p style="font-weight: 300;"> Sårbarheten hos norske virksomheter innen kritisk infrastruktur utgjør
+                alvorlige sikkerhetshull i norsk beredskap, ifølge DNV Cyber. </p>
+            <p> – Det er stor omstilling knyttet til energibransjen. En viktig løsning i forhold til den omstillingen er
+                digitalisering. Stadig flere av systemene som har vært analoge, blir nå digitale. Når de blir digitale,
+                så får du en større angrepsflate for digitale angrep, forklarer Kalleklev. </p>
+
+            <p class="bold-tekster"> Oppmerksom på faren </p>
+
+
+
+
+            <div class="bilde-vedsidenav">
+
+                <div>
+                    <p> I Norges vassdrags- og energidirektorat, NVE opplever de at kraftbransjen jobber godt med
+                        sikring av
+                        systemene. </p>
+
+
+                    <p style="font-weight: 300; margin-top: 30px;"> – Dette er et tema vi har jobbet strukturert med de siste årene, vi har delt vårt arbeide med
+                        bransjen
+                        for å veilede på området, og vi har hatt dette som et tema på våre tilsyn, sier Jan Helge Luth,
+                        seksjonssjef for Digital sikkerhet i NVE til NRK. </p>
+                </div>
+
+                <div class="bilde-vedsidenav-faktisk">
+                    <img style="width: 170px; height: 170px;" src="bilder/person2cyber.avif" alt="">
+                    <p class="undertekst-bilde" style="font-size: 15px; margin-top: 0px;"> – Med globale leverandørkjeder og økt bruk av underleverandører er
+                        sikkerhet i leverandørkjeder absolutt et viktig punkt å følge opp, sier Jan Helge Luth i NVE</p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <img src="bilder/lockedcyber.jpeg" alt="">
+            <p> – I NVE jobber vi med forskjellige risikoer kraftsektoren er utsatt for og cyberangrep er en av disse.
+                Vi er spesielt opptatt av cybersikkerhet for driftskontrollsystemer. Dette er selve nerven i
+                kraftsystemet, avslutter han. </p>
+            <p> I undersøkelsen fra DNV Cyber svarer hele 8 av 10 bedrifter at kompetansen til å håndtere sofistikerte
+                angrep ikke er tilstrekkelig. </p>
+
+            <p style="font-weight: 300;"> Like mange svarer at ansatte er det svakeste leddet i bedriften.</p>
+            <p> – Manglende kompetanse forsterker sårbarhetene i forsyningskjedene ytterligere. Det er viktig å få med
+                seg det svakeste leddet å få opp kompetansen gjennom hele organisasjonen, understreker Arve Johan
+                Kalleklev i DNV Cyber </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+    <footer>
+        Footer her
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
