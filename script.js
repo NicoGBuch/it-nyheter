@@ -62,11 +62,14 @@ document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= 
     });
 });
 
-function playvideo(element) {
-    element.play();
-}
+document.querySelectorAll(".karusell-article").forEach(el => {
+    el.addEventListener("click", function() {
+        el.querySelector("video").play();
+        el.querySelector("span").style.visibility = "hidden";
+    })
 
-function stopvideo(element) {
-    element.pause();
-    
-}
+    el.addEventListener("mouseleave", function() {
+        el.querySelector("video").pause();
+        el.querySelector("span").style.visibility = "visible";
+    })
+});
