@@ -111,6 +111,16 @@ a:hover,
     width: 50px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Avisartikkler */
 
