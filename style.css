@@ -60,6 +60,10 @@ nav {
     position: relative;
 }
 
+.logotekst{
+    display: flex;
+    align-items: center;
+}
 
 a,
 .button-dropdown {
