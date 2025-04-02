@@ -18,7 +18,7 @@ img {
     --nav-color: #fff;
     --nav-text-color: white;
     --article-color: #ffffff;
-    --button-color: #f5f5f5;
+    --button-color: #f5f5f500;
     --button-text-color: black;
     --icon-color: black;
 }
@@ -60,6 +60,11 @@ nav {
     position: relative;
 }
 
+.logotekst{
+    display: flex;
+    align-items: center;
+}
+
 a,
 .button-dropdown {
     color: inherit;
@@ -72,7 +77,7 @@ a,
     font-family: "Lato", serif;
     font-weight: 700;
     font-style: normal;
-    padding: 14px 100px;
+    padding: 14px 10px;
     display: inline-block;
 
 }
