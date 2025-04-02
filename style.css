@@ -213,6 +213,7 @@ main {
     justify-content: center;
     font-size: 20px;
     border-radius: 20px;
+    position: relative;
 }
 
 .karusell-article video{
@@ -220,10 +221,25 @@ main {
     height: 100%;
 }
 
+.karusell-article span {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    color: black;
+    border-radius: 100%;
+    background-color: #ffffffca;
+}
+
 
 
 .karusell-button {
     position: absolute;
+    z-index: 2;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
