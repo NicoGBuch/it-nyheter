@@ -159,13 +159,27 @@ main {
     grid-column: span 12;
 }
 
+
+.extraLarge img {
+    width: 50%;
+}
+
+.extraLarge h1 {
+    font-size: 60px;
+}
+
 .large{
     grid-column: span 6;
+    flex-direction: column;
+}
+
+.large h1 {
+    font-size: 42px;
 }
 
 .small{
     grid-column: span 3;
-
+    flex-direction: column;
 }
 
 .tekst{
@@ -262,14 +276,6 @@ article {
     display: flex;
     cursor: pointer;
     overflow: hidden;
-}
-
-article img {
-    width: 50%;
-}
-
-article h1 {
-    font-size: 60px;
 }
 
 article h2 {
