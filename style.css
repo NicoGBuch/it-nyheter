@@ -205,8 +205,8 @@ main {
     display: none;
 }
 .karusell-article {
-    min-width: 270px;
-    height: auto;
+    width: auto;
+    height: 500px;
     background: lightgray;
     display: flex;
     align-items: center;
@@ -217,6 +217,7 @@ main {
 
 .karusell-article video{
     border-radius: 20px;
+    height: 100%;
 }
 
 
