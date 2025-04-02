@@ -65,3 +65,8 @@ document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= 
 function playvideo(element) {
     element.play();
 }
+
+function stopvideo(element) {
+    element.pause();
+    
+}
