@@ -206,7 +206,7 @@ main {
 }
 .karusell-article {
     min-width: 270px;
-    height: 500px;
+    height: auto;
     background: lightgray;
     display: flex;
     align-items: center;
