@@ -18,7 +18,7 @@ img {
     --nav-color: #fff;
     --nav-text-color: white;
     --article-color: #ffffff;
-    --button-color: #f5f5f5;
+    --button-color: #f5f5f500;
     --button-text-color: black;
     --icon-color: black;
 }
@@ -47,17 +47,28 @@ body {
     cursor: pointer;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 5px 50px;
     background-color: var(--nav-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .dropdown {
     position: relative;
+}
+
+.logotekst{
+    display: flex;
+    align-items: center;
 }
 
 a,
@@ -72,7 +83,7 @@ a,
     font-family: "Lato", serif;
     font-weight: 700;
     font-style: normal;
-    padding: 14px 100px;
+    padding: 14px 10px;
     display: inline-block;
 
 }
@@ -100,8 +111,18 @@ a:hover,
     width: 50px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: var(--nav-color);
+    color: var(--text-color);
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Avisartikkler */
+
+/* Index.html */
 
 .forsideBody {
     display: flex;
@@ -109,6 +130,7 @@ a:hover,
 }
 
 main {
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
@@ -137,43 +159,32 @@ main {
     grid-column: span 12;
 }
 
+
+.extraLarge img {
+    width: 50%;
+}
+
+.extraLarge h1 {
+    font-size: 60px;
+}
+
 .large{
     grid-column: span 6;
+    flex-direction: column;
+}
+
+.large h1 {
+    font-size: 42px;
 }
 
 .small{
     grid-column: span 3;
-
+    flex-direction: column;
 }
 
 .tekst{
     padding: 20px;
 }
-
-
-.avisBody {
-    padding: 60px;
-    
-}
-
-.midt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-.midt h1 {
-    font-size: 60px;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    background-color: #f5f5f5;
-}
-
-
 
 .karusell-container {
     position: relative;
@@ -194,15 +205,22 @@ main {
     display: none;
 }
 .karusell-article {
-    min-width: 300px;
-    height: 200px;
+    min-width: 270px;
+    height: auto;
     background: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
+.karusell-article video{
+    border-radius: 20px;
+}
+
+
+
 .karusell-button {
     position: absolute;
     top: 50%;
@@ -221,18 +239,6 @@ main {
     right: 10px;
 }
 
-
-
-/* Index.html */
-
-.grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    background-color: var(--background-color);
-}
-
 article {
     /* min-height: 300px; */
     grid-column: span 3;
@@ -240,14 +246,6 @@ article {
     display: flex;
     cursor: pointer;
     overflow: hidden;
-}
-
-article img {
-    width: 50%;
-}
-
-article h1 {
-    font-size: 60px;
 }
 
 article h2 {
@@ -258,6 +256,25 @@ article h2 {
 .tekst {
     overflow-wrap: break-word;
     padding: 20px;
+}
+
+
+/* Avisartikkler */
+
+.avisBody {
+    padding: 60px;
+    
+}
+
+.midt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.midt h1 {
+    font-size: 60px;
 }
 
 #popup{
