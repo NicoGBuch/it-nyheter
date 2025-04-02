@@ -47,6 +47,8 @@ body {
     cursor: pointer;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -54,6 +56,10 @@ nav {
     padding: 20px 50px;
     background-color: var(--nav-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .dropdown {
