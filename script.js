@@ -61,3 +61,7 @@ document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= 
             : "Vis mer";
     });
 });
+
+function playvideo(element) {
+    element.play();
+}
