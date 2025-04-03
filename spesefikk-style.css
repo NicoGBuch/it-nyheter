@@ -1,3 +1,9 @@
+.bilde_tekst2 {
+    width: 100%;
+    font-size: 0.8em;
+    color: #555;
+    margin-top: -15px;
+}
 
 .hovedinnhold {
     display: flex;
@@ -16,7 +22,7 @@
 .overskrift-artikkel {
     margin-bottom: 30px;
     width: 100%;
-    
+
 }
 
 .underoverskrift {
@@ -29,7 +35,7 @@
 .underoverskrift-skrevet-av {
     margin-bottom: 35px;
     font-size: 20px;
-   
+
     font-weight: 100;
     width: 100%;
 }
@@ -64,8 +70,8 @@
 
 
 
- /* Oppsummering boks */
- .oppsumering-boks {
+/* Oppsummering boks */
+.oppsumering-boks {
     border-radius: 45px;
     background-color: rgb(193, 211, 217);
     padding: 45px;
@@ -78,10 +84,10 @@
 
 .oppsumering-innhold {
     max-height: 50px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.oppsumering-innhold > p {
+.oppsumering-innhold>p {
     margin-bottom: 20px;
 }
 
@@ -107,14 +113,14 @@
 /*Sitat boks*/
 
 .direkte-sitat-boks:hover {
-    background-color:#f0eaea;
+    background-color: #f0eaea;
     transition: 2s;
 }
 
 .direkte-sitat-boks {
-    
+
     width: 700px;
-    
+
 }
 
 .utforming-direkte-sitat-boks {
@@ -122,7 +128,7 @@
     font-weight: 300;
     font-family: oswald;
     font-size: 35px;
-   
+
 }
 
 .utforming-direkte-sitat-boks>div>p {
@@ -139,13 +145,13 @@
     font-style: oblique;
     font-weight: 500;
 }
-    
+
 
 
 /*energi bruk til chat*/
 
 .spurte-chat-boks:hover {
-    background-color:#f0eaea;
+    background-color: #f0eaea;
     transition: 2s;
 }
 
@@ -193,6 +199,6 @@
 }
 
 .søk-her-knapp:hover {
-    background-color: rgba(46, 46, 227, 0.916) ;
+    background-color: rgba(46, 46, 227, 0.916);
     transition: 2s;
 }
