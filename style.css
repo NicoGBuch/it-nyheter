@@ -53,9 +53,9 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 50px;
+    padding: 0px 50px;
     background-color: var(--nav-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
