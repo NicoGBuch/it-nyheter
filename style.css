@@ -51,6 +51,12 @@ body {
     cursor: pointer;
 }
 
+.blåstrek{
+    height: 3px;
+    grid-column: 1/13;
+    background-color: rgb(49, 49, 210);
+    border-radius: 2px;
+}
 
 
 nav {
