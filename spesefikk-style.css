@@ -225,6 +225,34 @@
     transition: 2s;
 }
 
+/* ny AI lov footer */
+
+.nyhets-footer {
+    background-color: rgba(82, 82, 232, 0.842); 
+    color: white; 
+    padding: 1rem; 
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    width: 1500px;
+    
+}
+
+.nyhets-footer a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+.nyhets-footer a:hover {
+    text-decoration: underline;
+}
+
+.nyhets-footer div {
+    
+    margin: 1rem;
+}
+
+
 /*bilde vedsiden av tekst*/
 
 .bilde-vedsidenav {
