@@ -33,11 +33,25 @@
     </header>
 
     <main class="loginMain">
-        <h1>Logg inn</h1>
-        <form action="index.html" method="GET">
-            <input name="usn" placeholder="Brukernavn">
-            <input name="psw" placeholder="Passord">
-        </form>
+        <div>
+            <h1>Logg inn</h1>
+            <form action="index.html" method="GET">
+                <div>
+                    <div><label for="usn">BRUKERNAVN</label></div>
+                    <div><input name="usn" placeholder="Brukernavn" type="text" required></div>
+                </div>
+
+                <div>
+                    <div><label for="usn">PASSORD</label></div>
+                    <div><input name="psw" placeholder="Passord" type="password" required></div>
+                </div>
+
+                <div>
+                    <div><button class="loginButton">Logg inn</button></div>
+                    <div><a>Glemt passord?</a><a>Ny bruker?</a></div>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer class="footerBottom">
