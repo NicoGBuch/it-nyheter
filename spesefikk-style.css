@@ -228,18 +228,17 @@
 /* ny AI lov footer */
 
 .nyhets-footer {
-    background-color: rgba(82, 82, 232, 0.842); 
-    color: white; 
+    background-color: rgb(193, 211, 217); 
+    color: black; 
     padding: 1rem; 
     display: flex;
     justify-content: space-between; 
-    flex-wrap: wrap; 
+    align-items: flex-start;
     width: 1500px;
-    
 }
 
 .nyhets-footer a {
-    color: #ffcc00; 
+    color: rgb(64, 64, 150); 
     text-decoration: none;
 }
 
