@@ -224,3 +224,65 @@
     background-color: var(--søkher-hover);
     transition: 2s;
 }
+
+/*bilde vedsiden av tekst*/
+
+.bilde-vedsidenav {
+    display: flex;
+    flex-direction: row
+}
+
+.undertekst-bilde {
+    font-size: 17px;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.bilde-vedsidenav-faktisk {
+    display: flex;
+    margin-left: 60px;
+}
+
+@media (width < 700px) {
+    /* Oppsummering boks */
+.oppsumering-boks {
+     width: 500px; 
+}
+
+
+.hovedinnhold {
+    width: 500px;
+    
+}
+
+.bilde-vedsidenav {
+    display: flex;
+    flex-direction: column
+}
+.bilde-vedsidenav-faktisk {
+   
+    margin-top: 50px;
+}
+
+
+
+
+.direkte-sitat-boks {
+
+    width: 400px;
+
+}
+
+.itøk-boks {
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+}
+
+.itøk-video {
+    width: 600px;
+}
+
+}
