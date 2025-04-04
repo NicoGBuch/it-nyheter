@@ -19,20 +19,18 @@
                     <img src="bilder/logo-BN.png" alt="logo" id="logo">
                 </a>
                 <div id="strek"></div>
-                <h1>BITnytt</h1>
+
             </div>
 
-            <div class="dropdown">
-                <button class="button-dropdown"></i> Dropdown
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#"><i class="fas fa-link"></i> Link 1</a>
-                    <a href="#"><i class="fas fa-link"></i> Link 2</a>
-                    <a href="#"><i class="fas fa-link"></i> Link 3</a>
-                </div>
+            <div>
+                <h1>Bit-nytt</h1>
             </div>
-            <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+
+            <div class="icons">
+                <i id="loginbutton" class="fa-solid fa-user"></i>
+                <!-- <button id="loginbutton">Logg inn</button> -->
+                <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+            </div>
         </nav>
     </header>
 
@@ -53,7 +51,7 @@
                     </div>
                 </article>
 
-                <article class="large" id="deepsseekartikkel">
+                <article class="large" id="deepseekartikkel">
                     <img src="bilder/deepseekbilde.jpeg" alt="deepseek">
                     <div class="tekst">
                         <h1>DeepSeek funnet verre enn TikTok</h1>
@@ -73,13 +71,20 @@
                         <button class="karusell-button venstre" onclick="scrollKarusell(-1)">&#10094;</button>
                         <!-- &#10094;.  er for pilen -->
                         <div class="karusell" id="scroll-karusell">
-                            <div class="karusell-article"><video src="bilder/video1.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video2.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video3.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video4.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video5.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video6.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
-                            <div class="karusell-article"><video src="bilder/video7.mp4"></video><span><i class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video1.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video2.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video3.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video4.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video5.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video6.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
+                            <div class="karusell-article"><video src="bilder/video7.mp4"></video><span><i
+                                        class="fa-solid fa-play"></i></span></div>
                         </div>
                         <button class="karusell-button høyre" onclick="scrollKarusell(1)">&#10095;</button>
                     </div>
@@ -106,15 +111,15 @@
                     <div class="tekst">
                         <h2>Regjeringen vil innføre AI-lov:</h2>
                         <h1>Vi må øke konkurransekraften</h1>
-                    
+
                     </div>
                 </article>
 
-                <article class="large">
-                    <img src="" alt="artikkel5">
+                <article class="large" id="førsteNorskeAstronaut">
+                    <img src="bilder/astronaut_bilde1.webp" alt="artikkel5">
                     <div class="tekst">
-                        <h2>noe som står her</h2>
-                        <h1>- noe som står her</h1>
+                        <h2>En historisk hendelse</h2>
+                        <h1>Norges første astronaut</h1>
                     </div>
                 </article>
 
@@ -162,7 +167,7 @@
                     </div>
                 </article>
             </div>
-
+        </div>
     </main>
     <footer>
         Footer her

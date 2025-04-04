@@ -1,3 +1,16 @@
+:root {
+
+    --tittel-boks: rgb(64, 64, 150);
+    --oppsumering-boks: rgb(193, 211, 217);
+    --sitat-hover: #f0eaea;
+    --linje-boks: purple;
+    --itøk-boks: rgb(232, 169, 161);
+    --itøk-boks-hover: rgb(233, 154, 144);
+    --søkher-knapp: rgba(82, 82, 232, 0.842);
+    --søkher-hover: rgba(46, 46, 227, 0.916);
+}
+
+
 .link-artikkel {
     font-family: roboto;
     font-size: 10px;
@@ -66,7 +79,7 @@
 .tittel-inniboks {
     font-weight: bold;
     margin-bottom: 20px;
-    color: rgb(64, 64, 150);
+    color: var(--tittel-boks) ;
     font-size: 30px;
 }
 
@@ -82,7 +95,7 @@
 /* Oppsummering boks */
 .oppsumering-boks {
     border-radius: 45px;
-    background-color: rgb(193, 211, 217);
+    background-color: var(--oppsumering-boks);
     padding: 45px;
     font-size: 15px;
     width: 700px;
@@ -106,7 +119,7 @@
 }
 
 .vis-mer-knapp {
-    background-color: rgb(64, 64, 150);
+    background-color: var(--tittel-boks);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -122,7 +135,7 @@
 /*Sitat boks*/
 
 .direkte-sitat-boks:hover {
-    background-color: #f0eaea;
+    background-color: var(--sitat-hover);
     transition: 2s;
 }
 
@@ -147,7 +160,7 @@
 
 .linje-direkte-sitat-boks {
     width: 10px;
-    background-color: purple;
+    background-color: var( --linje-boks);
 }
 
 .hvem-direkte-sitat-boks {
@@ -160,7 +173,7 @@
 /*energi bruk til chat*/
 
 .spurte-chat-boks:hover {
-    background-color: #f0eaea;
+    background-color: var(--sitat-hover);
     transition: 2s;
 }
 
@@ -190,16 +203,16 @@
     gap: 60px;
     padding: 60px;
     border-radius: 55px;
-    background-color: rgb(232, 169, 161);
+    background-color: var(--itøk-boks);
 }
 
 .itøk-boks:hover {
-    background-color: rgb(233, 154, 144);
+    background-color: var(  --itøk-boks-hover);
     transition: 2s;
 }
 
 .søk-her-knapp {
-    background-color: rgba(82, 82, 232, 0.842);
+    background-color: var( --søkher-knapp);
     padding: 20px 40px;
     color: white;
     border-radius: 70px;
@@ -208,7 +221,7 @@
 }
 
 .søk-her-knapp:hover {
-    background-color: rgba(46, 46, 227, 0.916);
+    background-color: var(--søkher-hover);
     transition: 2s;
 }
 
