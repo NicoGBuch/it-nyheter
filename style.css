@@ -153,9 +153,9 @@ main {
 }
 
 .sideAvis {
-    display: grid;
-    grid-template-columns: 1 1fr;
-    /* gap: 20px; */
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 
 .extraLarge{
