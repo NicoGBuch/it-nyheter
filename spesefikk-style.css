@@ -79,7 +79,7 @@
 .tittel-inniboks {
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--tittel-boks) ;
+    color: var(--tittel-boks);
     font-size: 30px;
 }
 
@@ -160,7 +160,7 @@
 
 .linje-direkte-sitat-boks {
     width: 10px;
-    background-color: var( --linje-boks);
+    background-color: var(--linje-boks);
 }
 
 .hvem-direkte-sitat-boks {
@@ -207,12 +207,12 @@
 }
 
 .itøk-boks:hover {
-    background-color: var(  --itøk-boks-hover);
+    background-color: var(--itøk-boks-hover);
     transition: 2s;
 }
 
 .søk-her-knapp {
-    background-color: var( --søkher-knapp);
+    background-color: var(--søkher-knapp);
     padding: 20px 40px;
     color: white;
     border-radius: 70px;
@@ -228,18 +228,17 @@
 /* ny AI lov footer */
 
 .nyhets-footer {
-    background-color: rgba(82, 82, 232, 0.842); 
-    color: white; 
+    background-color: rgb(193, 211, 217); 
+    color: black; 
     padding: 1rem; 
     display: flex;
     justify-content: space-between; 
-    flex-wrap: wrap; 
+    align-items: flex-start;
     width: 1500px;
-    
 }
 
 .nyhets-footer a {
-    color: #ffcc00; 
+    color: rgb(64, 64, 150); 
     text-decoration: none;
 }
 
@@ -248,6 +247,71 @@
 }
 
 .nyhets-footer div {
-    
+
     margin: 1rem;
+}
+
+
+/*bilde vedsiden av tekst*/
+
+.bilde-vedsidenav {
+    display: flex;
+    flex-direction: row
+}
+
+.undertekst-bilde {
+    font-size: 17px;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.bilde-vedsidenav-faktisk {
+    display: flex;
+    margin-left: 60px;
+}
+
+@media (width < 700px) {
+
+    /* Oppsummering boks */
+    .oppsumering-boks {
+        width: 500px;
+    }
+
+
+    .hovedinnhold {
+        width: 500px;
+
+    }
+
+    .bilde-vedsidenav {
+        display: flex;
+        flex-direction: column
+    }
+
+    .bilde-vedsidenav-faktisk {
+
+        margin-top: 50px;
+    }
+
+
+
+
+    .direkte-sitat-boks {
+
+        width: 400px;
+
+    }
+
+    .itøk-boks {
+        display: flex;
+        flex-direction: column;
+
+        width: 400px;
+    }
+
+    .itøk-video {
+        width: 600px;
+    }
+
 }
