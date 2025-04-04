@@ -40,9 +40,10 @@ img {
 body {
     font-family: "Roboto", serif;
     font-style: normal;
-    background-color: var(--background-color);
     font-family: roboto;
     color: var(--text-color);
+    background-image: url(bilder/bakgrunnsbilde_body1.avif);
+    background-size: contain;
 }
 
 #theme-icon {
