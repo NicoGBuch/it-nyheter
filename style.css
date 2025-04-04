@@ -93,6 +93,10 @@ a,
 
 }
 
+header div h1{ 
+    color: white;
+}
+
 a:hover,
 .button-dropdown {
     color: rgb(113, 90, 90);
