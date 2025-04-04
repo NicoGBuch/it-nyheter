@@ -40,9 +40,10 @@ img {
 body {
     font-family: "Roboto", serif;
     font-style: normal;
-    background-color: var(--background-color);
     font-family: roboto;
     color: var(--text-color);
+    background-image: url(bilder/bakgrunnsbilde_body1.avif);
+    background-size: contain;
 }
 
 #theme-icon {
@@ -50,6 +51,12 @@ body {
     cursor: pointer;
 }
 
+.blåstrek{
+    height: 3px;
+    grid-column: 1/13;
+    background-color: rgb(49, 49, 210);
+    border-radius: 2px;
+}
 
 
 nav {
@@ -91,6 +98,10 @@ a,
     padding: 14px 10px;
     display: inline-block;
 
+}
+
+header div h1{ 
+    color: white;
 }
 
 a:hover,
