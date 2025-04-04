@@ -124,6 +124,12 @@ footer {
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
 
+footer.footerBottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* Index.html */
 
@@ -136,6 +142,10 @@ main {
     margin-top: 120px;
     display: flex;
     align-items: center;
+}
+
+.loginMain {
+
 }
 
 .forsideContainer {
