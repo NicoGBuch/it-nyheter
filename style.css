@@ -294,14 +294,14 @@ article h2 {
     gap: 14px;
 }
 
-.icons > i {
+.icons > * {
     background-color: var(--nav-color);
     border: none;
     border-radius: 12px;
     padding: 14px;
 }
 
-.icons > i:hover {
+.icons > *:hover {
     background-color: var(--hover-color);
 }
 
@@ -360,6 +360,7 @@ article h2 {
     width: 100%;
     padding: 10px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .loginMain form input:focus {

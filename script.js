@@ -46,6 +46,11 @@ function onload() {
             });
         }
     });
+
+    if (localStorage.getItem("usn") != undefined) {
+        document.querySelector("#loginIcon").style.display = "none";
+        document.querySelector("#brukernavn").innerHTML = localStorage.getItem("usn");
+    }
 }
 
 
@@ -73,3 +78,15 @@ document.querySelectorAll(".karusell-article").forEach(el => {
         el.querySelector("span").style.visibility = "visible";
     })
 });
+
+document.querySelector("#form").addEventListener("submit", 
+    (e) => {
+        e.preventDefault();
+
+        let usn = form.querySelector("#usn");
+        //let psw = form.querySelector("#psw");
+
+        localStorage.setItem("usn", usn.value);
+        window.location.href = "/";
+    }
+)
