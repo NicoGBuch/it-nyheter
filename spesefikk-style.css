@@ -10,6 +10,10 @@
     --søkher-hover: rgba(46, 46, 227, 0.916);
 }
 
+.darkmode {
+    --sitat-hover: none;
+}
+
 
 .link-artikkel {
     font-family: roboto;
