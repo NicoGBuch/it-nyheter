@@ -124,7 +124,6 @@ footer {
     background-color: var(--nav-color);
     color: var(--text-color);
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
 }
 
 footer.footerBottom {
@@ -300,6 +299,10 @@ article h2 {
 }
 
 /* Login */
+
+.loginMain {
+
+}
 
 .loginMain > div {
     background-color: var(--nav-color);
