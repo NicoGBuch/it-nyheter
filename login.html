@@ -33,15 +33,15 @@
     <main class="loginMain">
         <div>
             <h1>Logg inn</h1>
-            <form action="index.html" method="GET">
+            <form id="form">
                 <div>
                     <div><label for="usn">BRUKERNAVN</label></div>
-                    <div><input name="usn" placeholder="Brukernavn" type="text" required></div>
+                    <div><input name="usn" id="usn" placeholder="Brukernavn" type="text" required></div>
                 </div>
 
                 <div>
-                    <div><label for="usn">PASSORD</label></div>
-                    <div><input name="psw" placeholder="Passord" type="password" required></div>
+                    <div><label for="psw">PASSORD</label></div>
+                    <div><input name="psw" id="psw" placeholder="Passord" type="password" required></div>
                 </div>
 
                 <div>
@@ -52,8 +52,21 @@
         </div>
     </main>
 
-    <footer class="footerBottom">
-        Footer her
+    <footer class="nyhets-footer">
+        <div>
+            <h3>Kontakt oss</h3>
+            <p>E-post: <a href="malito:redaksjon@nyhet.no">BITnytt@nyhet.no</a></p>
+            <p>Telefon: <a href="tel:+4712345678">+47 12 34 56 78</a></p>
+        </div>
+        <div>
+            <h3>Send inn tips</h3>
+            <p>Har du en sak vi bør se nærmere på? </p>
+            <p>Send oss et tips!</p>
+    
+        </div>
+        <div>
+            <p>&copy; 2025 Nyhetseksempel. Alle rettigheter reservert.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
