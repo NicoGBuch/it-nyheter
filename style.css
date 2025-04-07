@@ -397,6 +397,30 @@ article h2 {
 
 }
 
+@media (width < 650px) {
+
+    main {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .extraLarge h1 {
+        font-size: 24px;
+    }
+    
+    .large h1 {
+        font-size: 24px;
+    }
+
+    article h2 {
+        font-size: 14px;
+    }
+
+}
+
 
 /* Avisartikkler */
 
