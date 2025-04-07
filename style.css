@@ -45,8 +45,7 @@ body {
     font-style: normal;
     font-family: roboto;
     color: var(--text-color);
-    background-image: url(bilder/bakgrunnsbilde_body1.avif);
-    background-size: contain;
+    background-color: var(--background-color);
 }
 
 #theme-icon {
