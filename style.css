@@ -300,10 +300,6 @@ article h2 {
 
 /* Login */
 
-.loginMain {
-
-}
-
 .loginMain > div {
     background-color: var(--nav-color);
     margin: auto;
