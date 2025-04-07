@@ -85,6 +85,12 @@ nav {
     align-items: center;
 }
 
+#overskrift{
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 1000;
+}
+
 a,
 .button-dropdown {
     color: inherit;
@@ -124,6 +130,7 @@ footer {
     background-color: var(--nav-color);
     color: var(--text-color);
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 footer.footerBottom {
@@ -141,15 +148,11 @@ footer.footerBottom {
 }
 
 main {
-    margin-top: 120px;
-}
-
-.forsideContainer {
     margin: auto;
     margin-top: 120px;
     width: fit-content;
     display: grid;
-    padding: 50px 0px;
+    padding: 0px 100px;
     grid-template-columns: 4fr 1fr;
     gap: 100px;
 }
@@ -305,7 +308,8 @@ article h2 {
 /* Login */
 
 .loginMain {
-
+    display: block;
+    padding-top: 20px;
 }
 
 .loginMain > div {
@@ -370,6 +374,53 @@ article h2 {
     font-family: '';
     font-weight: 400;
 }
+
+
+@media (width < 1000px) {
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 0px 60px;
+    }
+
+    .extraLarge h1 {
+        font-size: 50px;
+    }
+    
+    .large h1 {
+        font-size: 38px;
+    }
+
+    .sideAvis {
+        display: none;
+    }
+
+}
+
+@media (width < 650px) {
+
+    main {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .extraLarge h1 {
+        font-size: 24px;
+    }
+    
+    .large h1 {
+        font-size: 24px;
+    }
+
+    article h2 {
+        font-size: 14px;
+    }
+
+}
+
 
 /* Avisartikkler */
 
