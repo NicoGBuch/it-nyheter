@@ -49,21 +49,55 @@ function onload() {
 
     if (localStorage.getItem("usn") != undefined) {
         document.querySelector("#loginIcon").style.display = "none";
-        
+
         let bn = document.querySelector("#brukernavn");
         bn.style.display = "block";
         bn.innerHTML = localStorage.getItem("usn");
 
-        bn.addEventListener("click", function() {
+        bn.addEventListener("click", function () {
             localStorage.removeItem("usn");
-            
+
             let bn = document.querySelector("#brukernavn");
             bn.style.display = "none";
             bn.innerHTML = "";
-        
+
             document.querySelector("#loginIcon").style.display = "block";
         });
     }
+
+    document.querySelector("#form").addEventListener("submit",
+        (e) => {
+            e.preventDefault();
+
+            let usn = form.querySelector("#usn");
+            //let psw = form.querySelector("#psw");
+
+            localStorage.setItem("usn", usn.value);
+            window.location.href = "/";
+        }
+    );
+
+    let i = 0;
+    document.querySelector("#tipsForm").addEventListener("submit",
+        (e) => {
+            e.preventDefault();
+
+            // if (i == 0) {
+            //     i = 1;
+            //     var elem = document.querySelector("#progressBar div");
+            //     var width = 1;
+            //     var id = setInterval(frame, 10);
+            //     function frame() {
+            //         if (width >= 100) {
+            //             clearInterval(id);
+            //             i = 0;
+            //         } else {
+            //             width++;
+            //             elem.style.width = width + "%";
+            //         }
+            //     }
+        }
+    );
 }
 
 
@@ -81,25 +115,13 @@ document.addEventListener("DOMContentLoaded", function () { //DOMContentLoaded= 
 });
 
 document.querySelectorAll(".karusell-article").forEach(el => {
-    el.addEventListener("click", function() {
+    el.addEventListener("click", function () {
         el.querySelector("video").play();
         el.querySelector("span").style.visibility = "hidden";
     })
 
-    el.addEventListener("mouseleave", function() {
+    el.addEventListener("mouseleave", function () {
         el.querySelector("video").pause();
         el.querySelector("span").style.visibility = "visible";
     })
 });
-
-document.querySelector("#form").addEventListener("submit", 
-    (e) => {
-        e.preventDefault();
-
-        let usn = form.querySelector("#usn");
-        //let psw = form.querySelector("#psw");
-
-        localStorage.setItem("usn", usn.value);
-        window.location.href = "/";
-    }
-);
