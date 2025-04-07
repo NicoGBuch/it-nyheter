@@ -307,6 +307,11 @@ article h2 {
 
 /* Login */
 
+.loginMain {
+    display: block;
+    padding-top: 20px;
+}
+
 .loginMain > div {
     background-color: var(--nav-color);
     margin: auto;
