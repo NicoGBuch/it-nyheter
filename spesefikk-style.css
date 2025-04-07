@@ -229,16 +229,16 @@
     transition: 2s;
 }
 
-/* ny AI lov footer */
+/* ny footer */
 
 .nyhets-footer {
     background-color: rgb(193, 211, 217); 
     color: black; 
-    padding: 1rem; 
+    padding: 16px; 
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    width: 1500px;
+    width: 1450px;
 }
 
 .nyhets-footer a {
@@ -251,8 +251,8 @@
 }
 
 .nyhets-footer div {
-
-    margin: 1rem;
+    font-size: 18px;
+    margin: 16px;
 }
 
 
