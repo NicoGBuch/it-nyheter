@@ -187,13 +187,14 @@
 
 .spurte-chat-boks {
     border: 1px solid black;
-    padding: 40px;
+    padding: 50px;
+    padding-right: 80px;
     font-size: 15px;
 
 }
 
 .spurte-chat-boks>p {
-    margin: 25px;
+    margin: 30px;
 }
 
 .linje-inniboks {
