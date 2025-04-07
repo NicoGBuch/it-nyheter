@@ -33,7 +33,7 @@
         <section class="tips-container">
           <h1>Tips oss!</h1>
           <p>Har du sett eller hørt noe vi bør vite om? Send inn ditt tips her.</p>
-          <form action="index.html" method="GET">
+          <form id="tipsForm">
             <div class="form-group">
               <label for="fullname">Fullt navn</label>
               <input id="fullname" name="fullname" type="text" placeholder="Fullt navn" required>
@@ -53,9 +53,13 @@
               <label for="tip">Ditt tips</label>
               <textarea id="tip" name="tip" placeholder="Skriv inn ditt tips her..." rows="6" required></textarea>
             </div>
-      
+
             <button type="submit" class="send-button">Send inn</button>
           </form>
+
+          <div id="progressBar">
+            <div>10%</div>
+          </div>
         </section>
       </main>
       
