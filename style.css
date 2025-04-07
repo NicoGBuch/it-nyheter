@@ -53,7 +53,7 @@ body {
     cursor: pointer;
 }
 
-.blåstrek{
+.blåstrek {
     height: 3px;
     grid-column: 1/13;
     background-color: rgb(49, 49, 210);
@@ -72,7 +72,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 3;
-    background-image:url(bilder/bakgrunnsbilde_header2.jpg);
+    background-image: url(bilder/bakgrunnsbilde_header2.jpg);
     background-size: cover;
 }
 
@@ -80,12 +80,12 @@ nav {
     position: relative;
 }
 
-.logotekst{
+.logotekst {
     display: flex;
     align-items: center;
 }
 
-#overskrift{
+#overskrift {
     font-family: 'roboto';
     font-weight: 700;
     font-size: 1000;
@@ -108,7 +108,7 @@ a,
 
 }
 
-header div h1{ 
+header div h1 {
     color: white;
 }
 
@@ -118,7 +118,7 @@ a:hover,
 }
 
 
-#logo{
+#logo {
     width: 60px;
 }
 
@@ -164,12 +164,12 @@ main {
 }
 
 .sideAvis {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.extraLarge{
+.extraLarge {
     grid-column: span 12;
 }
 
@@ -182,7 +182,7 @@ main {
     font-size: 60px;
 }
 
-.large{
+.large {
     grid-column: span 6;
     flex-direction: column;
 }
@@ -191,12 +191,12 @@ main {
     font-size: 42px;
 }
 
-.small{
+.small {
     grid-column: span 3;
     flex-direction: column;
 }
 
-.tekst{
+.tekst {
     padding: 20px;
 }
 
@@ -207,6 +207,7 @@ main {
     max-width: 930px;
     margin: auto;
 }
+
 .karusell {
     display: flex;
     gap: 10px;
@@ -215,9 +216,11 @@ main {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
 .karusell::-webkit-scrollbar {
     display: none;
 }
+
 .karusell-article {
     width: auto;
     height: 500px;
@@ -230,7 +233,7 @@ main {
     position: relative;
 }
 
-.karusell-article video{
+.karusell-article video {
     border-radius: 20px;
     height: 100%;
 }
@@ -263,9 +266,11 @@ main {
     cursor: pointer;
     border-radius: 50%;
 }
+
 .venstre {
     left: 10px;
 }
+
 .høyre {
     right: 10px;
 }
@@ -294,14 +299,14 @@ article h2 {
     gap: 14px;
 }
 
-.icons > * {
+.icons>* {
     background-color: var(--nav-color);
     border: none;
     border-radius: 12px;
     padding: 14px;
 }
 
-.icons > *:hover {
+.icons>*:hover {
     background-color: var(--hover-color);
 }
 
@@ -312,7 +317,7 @@ article h2 {
     padding-top: 20px;
 }
 
-.loginMain > div {
+.loginMain>div {
     background-color: var(--nav-color);
     margin: auto;
     border-radius: 2px;
@@ -335,11 +340,11 @@ article h2 {
     font-family: 'Noto Serif';
 }
 
-.loginMain form > div {
+.loginMain form>div {
     margin: 10px 0px;
 }
 
-.loginMain form > div > div {
+.loginMain form>div>div {
     margin: 4px 0px;
 }
 
@@ -387,7 +392,7 @@ article h2 {
     .extraLarge h1 {
         font-size: 50px;
     }
-    
+
     .large h1 {
         font-size: 38px;
     }
@@ -411,7 +416,7 @@ article h2 {
     .extraLarge h1 {
         font-size: 24px;
     }
-    
+
     .large h1 {
         font-size: 24px;
     }
@@ -442,11 +447,9 @@ article h2 {
     font-size: 60px;
 }
 
-#popup{
-    display:none; 
-    background:white; 
-    padding:20px; 
-    border:1px 
-    solid black;
+#popup {
+    display: none;
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
 }
-
