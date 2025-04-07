@@ -142,15 +142,11 @@ footer.footerBottom {
 }
 
 main {
-    margin-top: 120px;
-}
-
-.forsideContainer {
     margin: auto;
     margin-top: 120px;
     width: fit-content;
     display: grid;
-    padding: 50px 0px;
+    padding: 0px 100px;
     grid-template-columns: 4fr 1fr;
     gap: 100px;
 }
