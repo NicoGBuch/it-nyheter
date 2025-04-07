@@ -242,7 +242,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    width: 1450px;
+    width: 100%;
 }
 
 .nyhets-footer a {
@@ -254,10 +254,17 @@
     text-decoration: underline;
 }
 
+.tips-footer{
+    color: black;
+    font-size: 18px;
+    margin: 16px;
+}
+
 .nyhets-footer div {
     font-size: 18px;
     margin: 16px;
 }
+
 
 
 /*bilde vedsiden av tekst*/

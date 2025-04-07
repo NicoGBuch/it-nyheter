@@ -29,36 +29,37 @@
     </header>
 
 
-    <main class="loginMain">
-        <div>
-            <h1>Tips oss!</h1>
-            <form action="index.html" method="GET">
-                <div>
-                    <div><label for="usn">Fult navn</label></div>
-                    <div><input name="usn" placeholder="Fult navn" type="text" required></div>
-                </div>
+    <main class="tipsMain">
+        <section class="tips-container">
+          <h1>Tips oss!</h1>
+          <p>Har du sett eller hørt noe vi bør vite om? Send inn ditt tips her.</p>
+          <form action="index.html" method="GET">
+            <div class="form-group">
+              <label for="fullname">Fullt navn</label>
+              <input id="fullname" name="fullname" type="text" placeholder="Fullt navn" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="email">E-postadresse</label>
+              <input id="email" name="email" type="email" placeholder="E-postadresse" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Telefonnummer</label>
+              <input id="phone" name="phone" type="tel" placeholder="Telefonnummer" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="tip">Ditt tips</label>
+              <textarea id="tip" name="tip" placeholder="Skriv inn ditt tips her..." rows="6" required></textarea>
+            </div>
+      
+            <button type="submit" class="send-button">Send inn</button>
+          </form>
+        </section>
+      </main>
+      
 
-                <div>
-                    <div><label for="usn">E-post adresse</label></div>
-                    <div><input name="psw" placeholder="E-post adresse" type="password" required></div>
-                </div>
-
-                <div>
-                    <div><label for="usn">Telefon nummer</label></div>
-                    <div><input name="psw" placeholder="Telefonnummer" type="password" required></div>
-                </div>
-
-                <div>
-                    <div><label for="usn">Ditt tips</label></div>
-                    <div><input name="psw" placeholder="Ditt tips" type="password" required></div>
-                </div>
-
-                <div>
-                    <div><button class="loginButton">Send inn</button></div>
-                </div>
-            </form>
-        </div>
-    </main>
-
+    <script src="script.js"></script>
 </body>
 </html>
