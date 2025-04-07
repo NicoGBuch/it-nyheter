@@ -363,6 +363,29 @@ article h2 {
     font-weight: 400;
 }
 
+
+@media (width < 1000px) {
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 0px 60px;
+    }
+
+    .extraLarge h1 {
+        font-size: 50px;
+    }
+    
+    .large h1 {
+        font-size: 38px;
+    }
+
+    .sideAvis {
+        display: none;
+    }
+
+}
+
+
 /* Avisartikkler */
 
 .avisBody {
