@@ -85,6 +85,12 @@ nav {
     align-items: center;
 }
 
+#overskrift{
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 1000;
+}
+
 a,
 .button-dropdown {
     color: inherit;
