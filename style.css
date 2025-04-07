@@ -45,8 +45,7 @@ body {
     font-style: normal;
     font-family: roboto;
     color: var(--text-color);
-    background-image: url(bilder/bakgrunnsbilde_body1.avif);
-    background-size: contain;
+    background-color: var(--background-color);
 }
 
 #theme-icon {
@@ -142,15 +141,11 @@ footer.footerBottom {
 }
 
 main {
-    margin-top: 120px;
-}
-
-.forsideContainer {
     margin: auto;
     margin-top: 120px;
     width: fit-content;
     display: grid;
-    padding: 50px 0px;
+    padding: 0px 100px;
     grid-template-columns: 4fr 1fr;
     gap: 100px;
 }

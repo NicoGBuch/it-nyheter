@@ -132,6 +132,10 @@
     font-family: roboto;
 }
 
+.oppsumering-innhold p {
+    color: black;
+}
+
 /*Sitat boks*/
 
 .direkte-sitat-boks:hover {
