@@ -49,7 +49,20 @@ function onload() {
 
     if (localStorage.getItem("usn") != undefined) {
         document.querySelector("#loginIcon").style.display = "none";
-        document.querySelector("#brukernavn").innerHTML = localStorage.getItem("usn");
+        
+        let bn = document.querySelector("#brukernavn");
+        bn.style.display = "block";
+        bn.innerHTML = localStorage.getItem("usn");
+
+        bn.addEventListener("click", function() {
+            localStorage.removeItem("usn");
+            
+            let bn = document.querySelector("#brukernavn");
+            bn.style.display = "none";
+            bn.innerHTML = "";
+        
+            document.querySelector("#loginIcon").style.display = "block";
+        });
     }
 }
 
@@ -89,4 +102,4 @@ document.querySelector("#form").addEventListener("submit",
         localStorage.setItem("usn", usn.value);
         window.location.href = "/";
     }
-)
+);
