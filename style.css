@@ -540,13 +540,15 @@ article h2 {
     width: 100%;
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
-    display: none;
+    color: #1f1f1f;
+    font-weight: 700;
+    /* display: none; */
 }
 
 #progressBar div {
     width: 1%;
     height: 30px;
-    background-color: rgb(17, 156, 47);
+    background-color: rgb(4, 181, 42);
     border-radius: 10px;
     display: flex;
     justify-content: center;
