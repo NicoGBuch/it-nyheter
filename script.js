@@ -92,18 +92,21 @@ function onload() {
                     i = 1;
                     document.querySelector("#progressBar").style.display = "block";
                     var elem = document.querySelector("#progressBar > div");
-                    var width = 1;
-                    var id = setInterval(frame, 10);
+                    var width = 0;
+                    setTimeout(frame, randomNum());
                     function frame() {
                         if (width >= 100) {
-                            clearInterval(id);
                             i = 0;
                             setTimeout(() => { tipsForm.submit(); }, 500);
                         } else {
                             width++;
                             elem.style.width = width + "%";
                             elem.innerHTML = width + "%";
+                            setTimeout(frame, randomNum());
                         }
+                    }
+                    function randomNum() {
+                        return 8+(2+Math.sin(width*0.3)+Math.sin(width*0.8))*2;
                     }
                 }
             }
