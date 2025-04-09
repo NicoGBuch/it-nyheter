@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="spesefikk-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="spesefikk-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body onload="onload()">
-    <header>
-        <nav>
-            <div class="logotekst">
-                <a href="index.html">
-                    <img src="bilder/logo-BN.png" alt="logo" id="logo">
-                </a>
-                <div id="strek"></div>
-                
-            </div>
+  <header>
+    <nav>
+      <div class="logotekst">
+        <a href="index.html">
+          <img src="bilder/logo-BN.png" alt="logo" id="logo">
+        </a>
+        <div id="strek"></div>
 
-            <div><h1>Bit-nytt</h1></div>
-    
-            <div class="icons">
-                <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
-            </div>
-        </nav>
-    </header>
+      </div>
+
+      <div>
+        <h1>Bit-nytt</h1>
+      </div>
+
+      <div class="icons">
+        <i id="theme-icon" class="fa-solid fa-moon" onclick="switchColor()"></i>
+      </div>
+    </nav>
+  </header>
 
 
-    <main class="tipsMain">
-        <section class="tips-container">
-          <h1>Tips oss!</h1>
-          <p>Har du sett eller hørt noe vi bør vite om? Send inn ditt tips her.</p>
-          <form id="tipsForm" method="GET" action="index.html">
-            <div class="form-group">
-              <label for="fullname">Fullt navn</label>
-              <input id="fullname" name="fullname" type="text" placeholder="Fullt navn" required>
-            </div>
-      
-            <div class="form-group">
-              <label for="email">E-postadresse</label>
-              <input id="email" name="email" type="email" placeholder="E-postadresse" required>
-            </div>
-      
-            <div class="form-group">
-              <label for="phone">Telefonnummer</label>
-              <input id="phone" name="phone" type="tel" placeholder="Telefonnummer" required>
-            </div>
-      
-            <div class="form-group">
-              <label for="tip">Ditt tips</label>
-              <textarea id="tip" name="tip" placeholder="Skriv inn ditt tips her..." rows="6" required></textarea>
-            </div>
+  <main class="tipsMain">
+    <h1>Tips oss!</h1>
+    <p>Har du sett eller hørt noe vi bør vite om?<br>Send inn ditt tips her.</p>
+    <form id="tipsForm" method="GET" action="index.html">
+      <div class="form-group">
+        <label for="fullname">Fullt navn</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Fullt navn" required>
+      </div>
 
-            <button type="submit" class="send-button">Send inn</button>
-          </form>
+      <div class="form-group">
+        <label for="email">E-postadresse</label>
+        <input id="email" name="email" type="email" placeholder="E-postadresse" required>
+      </div>
 
-          <div id="progressBar">
-            <div>10%</div>
-          </div>
-        </section>
-      </main>
-      
+      <div class="form-group">
+        <label for="phone">Telefonnummer</label>
+        <input id="phone" name="phone" type="tel" placeholder="Telefonnummer" required>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="form-group">
+        <label for="tip">Ditt tips</label>
+        <textarea id="tip" name="tip" placeholder="Skriv inn ditt tips her..." rows="6" required></textarea>
+      </div>
+
+      <button type="submit" class="send-button">Send inn</button>
+    </form>
+
+    <div id="progressBar">
+      <div>10%</div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
