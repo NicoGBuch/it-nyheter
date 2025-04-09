@@ -39,13 +39,15 @@ function onload() {
         themeIcon.classList.add('fa-moon');
     }
 
-    document.querySelectorAll("article").forEach(el => {
-        if (el.id != "karusell") {
-            el.addEventListener('click', () => {
-                location.href = "/" + el.id + ".html";
-            });
-        }
-    });
+    try {
+        document.querySelectorAll("article").forEach(el => {
+            if (el.id != "karusell") {
+                el.addEventListener('click', () => {
+                    location.href = "/" + el.id + ".html";
+                });
+            }
+        });
+    } catch (err) {}
 
     if (localStorage.getItem("usn") != undefined) {
         document.querySelector("#loginIcon").style.display = "none";
@@ -65,39 +67,43 @@ function onload() {
         });
     }
 
-    document.querySelector("#form").addEventListener("submit",
-        (e) => {
-            e.preventDefault();
+    try {
+        document.querySelector("#form").addEventListener("submit",
+            (evt) => {
+                evt.preventDefault();
 
-            let usn = form.querySelector("#usn");
-            //let psw = form.querySelector("#psw");
+                let usn = form.querySelector("#usn");
+                //let psw = form.querySelector("#psw");
 
-            localStorage.setItem("usn", usn.value);
-            window.location.href = "/";
-        }
-    );
+                localStorage.setItem("usn", usn.value);
+                window.location.href = "/";
+            }
+        );
+    } catch (err) {}
 
-    let i = 0;
-    document.querySelector("#tipsForm").addEventListener("submit",
-        (e) => {
-            e.preventDefault();
+    try {
+        //let i = 0;
+        document.querySelector("#tipsForm").addEventListener("submit",
+            (evt) => {
+                evt.preventDefault();
 
-            // if (i == 0) {
-            //     i = 1;
-            //     var elem = document.querySelector("#progressBar div");
-            //     var width = 1;
-            //     var id = setInterval(frame, 10);
-            //     function frame() {
-            //         if (width >= 100) {
-            //             clearInterval(id);
-            //             i = 0;
-            //         } else {
-            //             width++;
-            //             elem.style.width = width + "%";
-            //         }
-            //     }
-        }
-    );
+                // if (i == 0) {
+                //     i = 1;
+                //     var elem = document.querySelector("#progressBar div");
+                //     var width = 1;
+                //     var id = setInterval(frame, 10);
+                //     function frame() {
+                //         if (width >= 100) {
+                //             clearInterval(id);
+                //             i = 0;
+                //         } else {
+                //             width++;
+                //             elem.style.width = width + "%";
+                //         }
+                //     }
+            }
+        );
+    } catch (err) {}
 }
 
 
