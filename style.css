@@ -152,6 +152,10 @@ footer.footerBottom {
     bottom: 0;
 }
 
+footer a {
+    color: var(--text-color);
+}
+
 
 /* Index.html */
 
