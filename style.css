@@ -538,11 +538,17 @@ article h2 {
 
 #progressBar {
     width: 100%;
-    background-color: grey;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+    display: none;
 }
 
-#progressBar > div {
+#progressBar div {
     width: 1%;
     height: 30px;
-    background-color: green;
+    background-color: rgb(17, 156, 47);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

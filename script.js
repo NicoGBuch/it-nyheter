@@ -82,25 +82,30 @@ function onload() {
     } catch (err) {}
 
     try {
-        //let i = 0;
-        document.querySelector("#tipsForm").addEventListener("submit",
+        let i = 0;
+        let tipsForm = document.querySelector("#tipsForm");
+        tipsForm.addEventListener("submit",
             (evt) => {
                 evt.preventDefault();
 
-                // if (i == 0) {
-                //     i = 1;
-                //     var elem = document.querySelector("#progressBar div");
-                //     var width = 1;
-                //     var id = setInterval(frame, 10);
-                //     function frame() {
-                //         if (width >= 100) {
-                //             clearInterval(id);
-                //             i = 0;
-                //         } else {
-                //             width++;
-                //             elem.style.width = width + "%";
-                //         }
-                //     }
+                if (i == 0) {
+                    i = 1;
+                    document.querySelector("#progressBar").style.display = "block";
+                    var elem = document.querySelector("#progressBar > div");
+                    var width = 1;
+                    var id = setInterval(frame, 10);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                            i = 0;
+                            setTimeout(() => { tipsForm.submit(); }, 500);
+                        } else {
+                            width++;
+                            elem.style.width = width + "%";
+                            elem.innerHTML = width + "%";
+                        }
+                    }
+                }
             }
         );
     } catch (err) {}
