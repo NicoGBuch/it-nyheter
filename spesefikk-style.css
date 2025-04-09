@@ -234,43 +234,6 @@
     transition: 2s;
 }
 
-/* ny footer */
-
-.nyhets-footer {
-    background-color: rgb(193, 211, 217); 
-    color: black; 
-    padding: 16px; 
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    width: 100%;
-}
-
-.nyhets-footer a {
-    color: rgb(64, 64, 150); 
-    text-decoration: none;
-}
-
-.nyhets-footer a:hover {
-    text-decoration: underline;
-}
-
-.tips-footer{
-    color: black;
-    font-size: 18px;
-    margin: 16px;
-}
-
-.nyhets-footer div {
-    font-size: 18px;
-    margin: 16px;
-}
-
-.footer-margin {
-    margin-top: 20px;
-}
-
-
 
 /*bilde vedsiden av tekst*/
 
